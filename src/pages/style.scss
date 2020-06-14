@@ -156,6 +156,13 @@ form {
   }
 }
 
+.error-msg {
+  font-size: 12px;
+  font-family: $body;
+  color: $second-black;
+  text-align: center;
+}
+
 // About Page
 .about-paragraph {
   color: $second-black;

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import * as firebase from "firebase";
@@ -19,27 +20,32 @@ firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
 //Connection to my colletions with Firebase
 const db = firestore.collection("contacts");
+
 function ContactForm() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
+  const [error, setError] = useState();
 
   function handleForm(e) {
     e.preventDefault();
     console.log(name, email, message);
-
-    db.doc()
-      .set({
-        name,
-        email,
-        message,
-      })
-      .then(function () {
-        console.log("worked");
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    if (!name || !email || !message) {
+      setError("I need a little bit more of info");
+    } else {
+      db.doc()
+        .set({
+          name,
+          email,
+          message,
+        })
+        .then(function () {
+          setError("Msg sent!I will get back to you soon");
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
   }
 
   return (
@@ -75,6 +81,7 @@ function ContactForm() {
           rows="8"
           placeholder="Your message.."
         />
+        <p className="error-msg"> {error}</p>
       </Form.Group>
       <Form.Group>
         <Button type="button" className="submit-button" onClick={handleForm}>
