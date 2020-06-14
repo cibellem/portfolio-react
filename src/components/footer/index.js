@@ -14,14 +14,14 @@ function Footer() {
         <div className="col-6">
           <div className="row p0 row-social">
             <div className="col-6 p-0">
-              <Link>
+              <a>
                 <i class="fab fa-linkedin-in"></i>
-              </Link>
+              </a>
             </div>
             <div className="col-6 p-0">
-              <Link>
+              <a>
                 <i class="fab fa-github"></i>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

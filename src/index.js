@@ -20,17 +20,16 @@ function App() {
   const [theme, setTheme] = useState("light");
 
   return (
-    <Router>
-      <NavBar />
-      <Container style={{ theme }} className="container-fluid">
-        <Route path="/" exact render={() => <HomePage />} />
-        <Route path="/works" render={() => <WorksPage />} />
-        <Route path="/about" render={() => <AboutPage />} />
-        <Route path="/contact" render={() => <ContactPage />} />
-      </Container>
+    <>
+      <Router>
+        <NavBar />
+        <Container style={{ theme }} className="container-fluid">
+          <HomePage />
+        </Container>
 
-      <Footer />
-    </Router>
+        <Footer />
+      </Router>
+    </>
   );
 }
 
