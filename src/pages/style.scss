@@ -275,7 +275,8 @@ section.diagonal {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background: #19528565;
+
+  background: #a3b9cc;
 }
 
 //Footer
@@ -321,16 +322,24 @@ section.diagonal {
   .hero-text {
     font-size: 1em;
   }
-  .about-paragraph,
+
   .contact-form-header {
     font-size: 16px;
     line-height: 35px;
+  }
+
+  .about-paragraph {
+    font-size: 16px;
+    line-height: 28px;
   }
   .row-to-shrink {
     padding: 40px;
   }
   .row-projects {
     padding: 0;
+  }
+  .project-img {
+    width: 100%;
   }
 }
 
