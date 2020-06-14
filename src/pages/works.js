@@ -72,12 +72,13 @@ function WorksPage() {
                     <div className="container">
                       <div className="row mt-2">
                         <div className="col">
-                          <Link id="gihub-link" to={item.github}>
+                          <a id="gihub-link" href={item.github}>
+                            {" "}
                             github
-                          </Link>
-                          <Link id="app-link" to={item.liveApp}>
+                          </a>
+                          <a id="app-link" href={item.liveApp}>
                             app
-                          </Link>
+                          </a>
                         </div>
                       </div>
                     </div>
