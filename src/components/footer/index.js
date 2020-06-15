@@ -14,12 +14,14 @@ function Footer() {
         <div className="col-6">
           <div className="row p0 row-social">
             <div className="col-6 p-0">
-              <a>
+              <a href="https://www.linkedin.com/in/cibelle-montor-2a1a58157/">
+                {" "}
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
             <div className="col-6 p-0">
-              <a>
+              <a href="https://github.com/cibellem">
+                {" "}
                 <i class="fab fa-github"></i>
               </a>
             </div>
