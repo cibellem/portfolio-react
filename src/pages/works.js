@@ -79,6 +79,9 @@ function WorksPage() {
                           <a id="app-link" href={item.liveApp}>
                             app
                           </a>
+                          <a id="more">
+                            more <i class="fas fa-caret-down"></i>
+                          </a>
                         </div>
                       </div>
                     </div>

@@ -10,6 +10,7 @@ $tomato: #054986;
 $black: #000000;
 $gray: rgba(0, 0, 0, 0.29);
 $second-black: #4e4d4d;
+$black-mute: #615c59;
 
 html,
 body {
@@ -30,8 +31,8 @@ body {
 }
 .nav-link {
   font-family: $header;
-  color: $second-black !important;
-  font-size: 16px;
+  color: $black-mute !important;
+  font-size: 18px;
 
   position: relative;
   margin-top: 10px;
@@ -174,24 +175,6 @@ form {
 
 // Works Page
 
-.gradient {
-  height: 20px;
-  position: relative;
-  width: 100%;
-  background: radial-gradient(#dddddd);
-}
-
-.gradient:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  left: 0;
-  height: 3px;
-  background: linear-gradient(#dddddd);
-}
-
 .hashtags {
   color: $second-black;
   font-family: $header;
@@ -263,26 +246,25 @@ section:before {
   content: "";
 }
 section.diagonal {
-  background: rgba(234, 234, 240, 0.137);
+  background: inherit;
 }
 .diagonal {
   z-index: 1;
   padding: 3em;
   h2 {
-    color: #f9f5f1;
+    color: $second-black;
   }
 }
 .diagonal:before {
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-4deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 4% 0;
+  transform-origin: 10% 0;
   top: 0;
   left: -28%;
   z-index: -1;
   width: 150%;
   height: 100%;
-
   background: #a3b9cc;
 }
 
