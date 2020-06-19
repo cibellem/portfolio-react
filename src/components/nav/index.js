@@ -8,7 +8,7 @@ function NavBar() {
     console.log("hi");
   };
   return (
-    <Navbar expand="sm" className="container-fluid nav fixed-top">
+    <Navbar expand="sm" className="container nav fixed-top">
       <Navbar.Toggle
         className="border-1 ml-auto nav-bar-toggle"
         aria-controls="navbar-toggle"
@@ -42,7 +42,7 @@ function NavBar() {
           >
             Contact
           </a>
-          {/* 
+          {/*
            */}
         </Nav>
       </Navbar.Collapse>

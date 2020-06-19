@@ -14,9 +14,10 @@ function WorksPage() {
     {
       id: 1,
       image: shelfie,
-      description: "#react #mongodb #node #google-books-api #REST-apis",
+      description: "#react #mongodb #node #google-books-api #REST-apis #JSON",
       github: "https://github.com/cibellem/react-bookSearch",
       liveApp: "https://react-book-shelfie.herokuapp.com/",
+      title: "Shelfie",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ function WorksPage() {
       description: "#react #node #open-weather-api ",
       github: "https://github.com/cibellem/react-wdashboard",
       liveApp: "https://shrouded-sea-44886.herokuapp.com/",
+      title: "React Wx",
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ function WorksPage() {
       description: "#jquery #mysqL #Sequelize #bootstrap #handlebars ",
       github: "https://github.com/cibellem/cleankitchen",
       liveApp: "https://ckitchenpos.herokuapp.com/",
+      title: "Clean Kitchen",
     },
     {
       id: 4,
@@ -38,6 +41,7 @@ function WorksPage() {
       description: "#vanilla Js #HTML #CSS",
       github: "https://github.com/LLJirie/Pleasantly",
       liveApp: "https://lljirie.github.io/Pleasantly/",
+      title: "Pleasantly",
     },
     {
       id: 5,
@@ -45,6 +49,7 @@ function WorksPage() {
       description: "#react #mongodb #node #aws-amplify",
       github: "https://github.com/verlitas/WebSpace",
       liveApp: "https://thewebspace.herokuapp.com/",
+      title: "Web Space",
     },
   ];
 
@@ -68,7 +73,8 @@ function WorksPage() {
               <Row>
                 <Col>
                   <p className="hashtags">
-                    {item.description}{" "}
+                    <h5 className="">{item.title}</h5>
+                    {item.description}
                     <div className="container">
                       <div className="row mt-2">
                         <div className="col">
@@ -78,9 +84,6 @@ function WorksPage() {
                           </a>
                           <a id="app-link" href={item.liveApp}>
                             app
-                          </a>
-                          <a id="more">
-                            more <i class="fas fa-caret-down"></i>
                           </a>
                         </div>
                       </div>

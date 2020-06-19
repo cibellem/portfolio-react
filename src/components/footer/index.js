@@ -6,29 +6,29 @@ import Col from "react-bootstrap/Col";
 
 function Footer() {
   return (
-    <div className="footer ">
-      <div className="copyright row text-center">
-        <div className="col-6">
-          <p>Cibelle Montor 2020</p>
-        </div>
-        <div className="col-6">
-          <div className="row p0 row-social">
-            <div className="col-6 p-0">
-              <a href="https://www.linkedin.com/in/cibelle-montor-2a1a58157/">
-                {" "}
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-            <div className="col-6 p-0">
-              <a href="https://github.com/cibellem">
-                {" "}
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h4>Cibelle Montor</h4>
+
+        <p class="footer-company-name">© 2020 Copyright</p>
+        <span>Illustration by Stories by Freepik </span>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-icons">
+          <a href="https://www.linkedin.com/in/cibelle-montor-2a1a58157/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/cibellem">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:montorcibelle@gmail.com">
+            {" "}
+            <i class="fas fa-at"></i>
+          </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

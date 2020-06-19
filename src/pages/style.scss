@@ -25,10 +25,7 @@ body {
 }
 
 //Nav
-.nav:hover {
-  background-color: whitesmoke;
-  transition: ease-out 0.6s;
-}
+
 .nav-link {
   font-family: $header;
   color: $black-mute !important;
@@ -125,11 +122,13 @@ form {
 
 .form {
   .submit-button {
-    font-family: $header;
-    font-size: 14px;
-    background-color: $tomato;
+    font-family: $body;
+    font-size: 18px;
+    background-color: #20639b;
     padding: 15px;
+    color: whitesmoke;
     border: none;
+    font-weight: bold;
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -176,11 +175,14 @@ form {
 // Works Page
 
 .hashtags {
-  color: $second-black;
+  color: $black-mute;
   font-family: $header;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   margin-top: 10px;
+  h5 {
+    color: whitesmoke;
+  }
 }
 
 #gihub-link {
@@ -247,17 +249,18 @@ section:before {
 }
 section.diagonal {
   background: inherit;
+  padding: 50px 0px;
 }
 .diagonal {
   z-index: 1;
   padding: 3em;
   h2 {
-    color: $second-black;
+    color: whitesmoke;
   }
 }
 .diagonal:before {
-  -webkit-transform: rotate(-4deg);
-  transform: rotate(-3deg);
+  -webkit-transform: rotate(0);
+  transform: rotate(-2deg);
   -webkit-transform-origin: 4% 0;
   transform-origin: 10% 0;
   top: 0;
@@ -265,27 +268,11 @@ section.diagonal {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background: #a3b9cc;
+  background: #1d58889b;
 }
 
 //Footer
-.footer {
-  background-color: #464646;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  padding: 5px;
-  p {
-    color: silver;
-    font-family: $body;
-    font-weight: 300;
-    font-size: 16px;
-  }
-  i {
-    font-size: 1.8em;
-    color: silver;
-  }
-}
+
 .copyright {
   padding: 10px;
 }
@@ -293,6 +280,115 @@ section.diagonal {
 .row-shared {
   height: 100vh;
   align-items: center;
+}
+
+//Footer copied and pasted
+
+footer {
+  position: fixed;
+  bottom: 0;
+  font-family: $body;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: #241c15;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-family: $body;
+  padding: 40px 40px 50px 40px;
+  color: $black-mute;
+  font-size: 14px;
+  margin-top: 60px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: auto;
+}
+.footer-distributed span {
+  font-size: 12px;
+}
+
+.footer-distributed h4 {
+  color: gray;
+  font-family: $body;
+  margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-company-name {
+  color: $black-mute;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: auto;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: auto;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+  background-color: #525252;
+  border-radius: 30px;
+  font-size: 30px;
+  color: gray;
+  text-align: center;
+}
+
+.footer-icons a {
+  margin-right: 20px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
