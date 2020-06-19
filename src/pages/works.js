@@ -81,9 +81,11 @@ function WorksPage() {
                           <a id="gihub-link" href={item.github}>
                             {" "}
                             github
+                            <i class="fas fa-angle-right"></i>
                           </a>
                           <a id="app-link" href={item.liveApp}>
                             app
+                            <i class="fas fa-angle-right"></i>
                           </a>
                         </div>
                       </div>

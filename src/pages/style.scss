@@ -149,7 +149,7 @@ form {
   font-size: 16px;
   font-weight: 300;
   i {
-    color: $tomato !important;
+    color: #20639b !important;
     font-weight: bold;
     margin-right: 20px;
     font-size: 1.4em;
@@ -175,13 +175,25 @@ form {
 // Works Page
 
 .hashtags {
-  color: $black-mute;
+  color: $second-black;
   font-family: $header;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 10px;
   h5 {
     color: whitesmoke;
+  }
+  i {
+    display: inline-flex;
+    padding: 0px 3px;
+    font-size: 0.8rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+  }
+  p {
+    margin-top: 0px;
   }
 }
 
@@ -300,12 +312,12 @@ footer {
 }
 
 .footer-distributed {
-  background-color: #241c15;
+  background-color: #464646;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font-family: $body;
-  padding: 40px 40px 50px 40px;
+  padding: 30px 30px 40px 30px;
   color: $black-mute;
   font-size: 14px;
   margin-top: 60px;
@@ -328,10 +340,11 @@ footer {
 }
 .footer-distributed span {
   font-size: 12px;
+  color: gray;
 }
 
 .footer-distributed h4 {
-  color: gray;
+  color: silver;
   font-family: $body;
   margin: 0;
 }
@@ -339,7 +352,7 @@ footer {
 /* The company logo */
 
 .footer-distributed .footer-company-name {
-  color: $black-mute;
+  color: gray;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
