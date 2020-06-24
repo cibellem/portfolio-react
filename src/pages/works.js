@@ -80,11 +80,11 @@ function WorksPage() {
                         <div className="col">
                           <a id="gihub-link" href={item.github}>
                             {" "}
-                            github
+                            Source Code
                             <i class="fas fa-angle-right"></i>
                           </a>
                           <a id="app-link" href={item.liveApp}>
-                            app
+                            Live App
                             <i class="fas fa-angle-right"></i>
                           </a>
                         </div>
