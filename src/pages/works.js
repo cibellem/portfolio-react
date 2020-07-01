@@ -6,8 +6,8 @@ import shelfie from "../pages/assets/shelfie.svg";
 import wx from "../pages/assets/wx.svg";
 import pleasantly from "../pages/assets/pleasantly.svg";
 import ck from "../pages/assets/ck.svg";
-import ws from "../pages/assets/ws.svg";
-import { Link } from "react-router-dom";
+import plantare from "../pages/assets/plantare.svg";
+
 
 function WorksPage() {
   const projects = [
@@ -45,11 +45,11 @@ function WorksPage() {
     },
     {
       id: 5,
-      image: ws,
-      description: "#react #mongodb #node #aws-amplify",
-      github: "https://github.com/verlitas/WebSpace",
-      liveApp: "https://thewebspace.herokuapp.com/",
-      title: "Web Space",
+      image: plantare,
+      description: "#react #mongodb #nodejs #enzyme #jasmine #firebase ",
+      github: "https://github.com/cibellem/plantare",
+      liveApp: "https://plantare.herokuapp.com/",
+      title: "Plantare",
     },
   ];
 
