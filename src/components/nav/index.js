@@ -8,7 +8,7 @@ function NavBar() {
     console.log("hi");
   };
   return (
-    <Navbar expand="sm" className="container nav fixed-top">
+    <Navbar expand="lg" className="container-fluid nav ">
       <Navbar.Toggle
         className="border-1 ml-auto nav-bar-toggle"
         aria-controls="navbar-toggle"

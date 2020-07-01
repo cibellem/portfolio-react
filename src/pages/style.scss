@@ -21,16 +21,25 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   padding: 0;
-  // background-color: #fffefc;
+  background: rgb(251, 98, 107);
+  background: linear-gradient(
+    270deg,
+    rgba(251, 98, 107, 1) 0%,
+    rgba(246, 45, 94, 0.6337885495995272) 100%
+  );
 }
 
 //Nav
+
+.navbar {
+  box-shadow: 0px 3px 6px rgba(136, 134, 134, 0.383);
+  padding: 20px 30px;
+}
 
 .nav-link {
   font-family: $header;
   color: $black-mute !important;
   font-size: 18px;
-
   position: relative;
   margin-top: 10px;
   font-weight: 700;
@@ -42,6 +51,7 @@ body {
 div.brackets a:before,
 div.brackets a:after {
   position: absolute;
+  color: whitesmoke;
   opacity: 0;
   font-size: 30px;
   top: 0px;
@@ -70,6 +80,7 @@ div.brackets a:hover:after {
   font-family: $header;
   font-weight: bold;
   font-size: 4em;
+  color: whitesmoke;
   margin-bottom: 5%;
 }
 
@@ -91,7 +102,7 @@ div.brackets a:hover:after {
 .page-header {
   font-family: $header;
   font-size: 3.5em;
-  color: $black;
+  color: #f2f2f2;
   font-weight: bold;
   font-style: normal;
 }
@@ -123,15 +134,22 @@ form {
 .form {
   .submit-button {
     font-family: $body;
-    font-size: 18px;
-    background-color: #20639b;
+    font-size: 16px;
+    border: 3px solid #fb626b;
+    background-color: inherit;
+    color: #fb626b;
     padding: 15px;
-    color: whitesmoke;
-    border: none;
+    border-radius: 20px;
+
     font-weight: bold;
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+}
+.submit-button:hover {
+  background-color: #fb626b;
+  color: whiteSmoke;
+  transition: 1s;
 }
 .contact-form-header {
   font-family: $body;
@@ -146,13 +164,18 @@ form {
 .contact-list {
   font-family: $body;
   color: $second-black;
+
   font-size: 16px;
   font-weight: 300;
   i {
-    color: #20639b !important;
+    color: #fb626b !important;
     font-weight: bold;
     margin-right: 20px;
     font-size: 1.4em;
+  }
+  ul,
+  li {
+    background-color: whitesmoke;
   }
 }
 
@@ -181,7 +204,9 @@ form {
   font-weight: 500;
   margin-top: 10px;
   h5 {
-    color: whitesmoke;
+    color: $second-black;
+    font-size: 18px;
+    font-weight: 600;
   }
   i {
     display: inline-flex;
@@ -199,36 +224,37 @@ form {
 
 #gihub-link {
   font-weight: lighter;
-  background-color: #1523eb80;
-  padding: 3px 10px;
+  background-color: #ff8f76;
+  padding: 5px 10px;
   font-size: 12px;
-  color: white;
-  border-radius: 10px;
-  border-bottom: 3px solid #1523ebdf;
+  color: #f2f2f2;
+  border-radius: 9px;
+  // border: 1px solid #;
+  border-bottom: 3px solid rgb(248, 77, 88);
 }
 
 #app-link {
   font-weight: lighter;
-  background-color: #3fa24f;
-  padding: 3px 10px;
+  background-color: #ff8f76;
+  padding: 5px 10px;
   margin-left: 2px;
   font-size: 12px;
-  color: white;
-  border-radius: 10px;
-  border-bottom: 3px solid #248a36;
+  color: #f2f2f2;
+  border-radius: 9px;
+  border-bottom: 3px solid rgb(248, 77, 88);
 }
 #app-link:hover,
 #gihub-link:hover {
   text-decoration: none;
-  box-shadow: 0px 2px 3px $second-black;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.479);
 }
 
 .project-img {
   height: auto;
-  box-shadow: 0px 3px 4px 0px rgba(8, 8, 8, 0.76);
+  box-shadow: 0px 3px 4px rgba(8, 8, 8, 0.459);
   width: 80%;
   border-radius: 5px;
-  border: 4px rgba(27, 26, 26, 0.096) solid;
+  border: 2px rgba(27, 26, 26, 0.096) solid;
   opacity: 0.9;
 }
 .row-projects {
@@ -250,15 +276,23 @@ form {
 section {
   position: relative;
   background: none;
-  color: #fff;
+  // color: #fff;
   text-align: center;
 
+  justify-content: space-evenly;
+}
+
+.contact-section {
+  position: relative;
+  background: none;
+  text-align: center;
   justify-content: space-evenly;
 }
 section:before {
   position: absolute;
   content: "";
 }
+
 section.diagonal {
   background: inherit;
   padding: 50px 0px;
@@ -267,11 +301,27 @@ section.diagonal {
   z-index: 1;
   padding: 3em;
   h2 {
-    color: whitesmoke;
+    color: $second-black;
   }
 }
+.contact-section {
+  z-index: 1;
+  padding: 2em;
+  h2 {
+    color: $second-black;
+  }
+}
+.contact-section:before {
+  transform-origin: 10% 0;
+  top: 0;
+  left: -28%;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background: white;
+}
 .diagonal:before {
-  -webkit-transform: rotate(0);
+  -webkit-transform: rotate(4);
   transform: rotate(-2deg);
   -webkit-transform-origin: 4% 0;
   transform-origin: 10% 0;
@@ -280,9 +330,12 @@ section.diagonal {
   z-index: -1;
   width: 150%;
   height: 100%;
-  background: #1d58889b;
+  background: white;
 }
-
+.diagonal-skills {
+  background: #f2f2f2;
+  transform: rotate(-0deg);
+}
 //Footer
 
 .copyright {
@@ -320,7 +373,7 @@ footer {
   padding: 30px 30px 40px 30px;
   color: $black-mute;
   font-size: 14px;
-  margin-top: 60px;
+
   justify-content: space-around;
   align-items: center;
   display: flex;

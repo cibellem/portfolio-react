@@ -8,7 +8,6 @@ import pleasantly from "../pages/assets/pleasantly.svg";
 import ck from "../pages/assets/ck.svg";
 import plantare from "../pages/assets/plantare.svg";
 
-
 function WorksPage() {
   const projects = [
     {
@@ -35,14 +34,14 @@ function WorksPage() {
       liveApp: "https://ckitchenpos.herokuapp.com/",
       title: "Clean Kitchen",
     },
-    {
-      id: 4,
-      image: pleasantly,
-      description: "#vanilla Js #HTML #CSS",
-      github: "https://github.com/LLJirie/Pleasantly",
-      liveApp: "https://lljirie.github.io/Pleasantly/",
-      title: "Pleasantly",
-    },
+    // {
+    //   id: 4,
+    //   image: pleasantly,
+    //   description: "#vanilla Js #HTML #CSS",
+    //   github: "https://github.com/LLJirie/Pleasantly",
+    //   liveApp: "https://lljirie.github.io/Pleasantly/",
+    //   title: "Pleasantly",
+    // },
     {
       id: 5,
       image: plantare,
@@ -81,11 +80,11 @@ function WorksPage() {
                           <a id="gihub-link" href={item.github}>
                             {" "}
                             Source Code
-                            <i class="fas fa-angle-right"></i>
+                            <i class="pl-2  fal fa-angle-right"></i>
                           </a>
                           <a id="app-link" href={item.liveApp}>
                             Live App
-                            <i class="fas fa-angle-right"></i>
+                            <i class="pl-2   fal fa-angle-right"></i>
                           </a>
                         </div>
                       </div>

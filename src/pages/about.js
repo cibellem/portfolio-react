@@ -1,18 +1,18 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
+
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 function AboutPage() {
   return (
     <>
-      <Row id="about" className="text-center   py-5">
+      <Row id="about" className="text-center py-5">
         <Col>
           <h2 className="page-header">about</h2>
           <small></small>
         </Col>
       </Row>
-      <Row className="row-to-shrink ">
+      <Row className="row-to-shrink pb-5  ">
         <Col md={4} sm={12}>
           {" "}
           <p className="about-paragraph">
@@ -43,7 +43,7 @@ function AboutPage() {
           </p>
         </Col>
       </Row>
-      <hr />
+      {/* <hr /> */}
     </>
   );
 }
