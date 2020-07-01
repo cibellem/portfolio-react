@@ -20,6 +20,7 @@ function App() {
     <>
       <Router>
         <NavBar />
+
         {/* <button onClick={() => themeState.toggle()}>
             {themeState.dark ? "Switch to Light Mode" : "Switch to Dark Mode"}
           </button> */}

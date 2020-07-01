@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 function Hero() {
   return (
     <Row id="home" className="row-shared  row-to-shrink ">
-      <Col className="  " lg={6} md={6} xs={12}>
+      <Col className="" lg={6} md={6} xs={12}>
         {" "}
         <h1 className="hero-header">Welcome</h1>
         <p className="hero-text">
@@ -16,9 +16,9 @@ function Hero() {
           applications.
         </p>
       </Col>
-      <Col className="text-right" lg={6} md={6} xs={12}>
+      <Col className="text-right  " lg={6} md={6} xs={12}>
         <img
-          className="hero-image img-responsive"
+          className="hero-image img-responsive  "
           src={require("./me.svg")}
           alt=""
         />

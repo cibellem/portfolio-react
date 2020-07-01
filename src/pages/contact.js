@@ -8,7 +8,7 @@ import ContactForm from "../components/contact-form";
 function ContactPage() {
   return (
     <section className="contact-section">
-      <Row id="contact" className="text-left py-5    ">
+      <Row id="contact" className="text-left pt-5 ">
         <Col className="d-flex-row justify-around" md={6} xs={12}>
           <h2 className=" page-header">reach out!</h2>
           <Row>

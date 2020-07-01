@@ -32,7 +32,7 @@ body {
 //Nav
 
 .navbar {
-  box-shadow: 0px 3px 6px rgba(136, 134, 134, 0.383);
+  // box-shadow: 0px 3px 6px rgba(136, 134, 134, 0.383);
   padding: 20px 30px;
 }
 
@@ -75,7 +75,13 @@ div.brackets a:hover:after {
   opacity: 1;
   transform: translateX(0px);
 }
-
+.hero-paralax {
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .hero-header {
   font-family: $header;
   font-weight: bold;
@@ -106,7 +112,6 @@ div.brackets a:hover:after {
   font-weight: bold;
   font-style: normal;
 }
-
 // Contact Page
 
 // Forms
@@ -140,7 +145,6 @@ form {
     color: #fb626b;
     padding: 15px;
     border-radius: 20px;
-
     font-weight: bold;
     width: 100%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -221,6 +225,9 @@ form {
     margin-top: 0px;
   }
 }
+.col-works {
+  padding: 20px;
+}
 
 #gihub-link {
   font-weight: lighter;
@@ -286,6 +293,7 @@ section {
   position: relative;
   background: none;
   text-align: center;
+
   justify-content: space-evenly;
 }
 section:before {
@@ -304,12 +312,16 @@ section.diagonal {
     color: $second-black;
   }
 }
-.contact-section {
+.contact-section,
+.diagonal-skills {
   z-index: 1;
   padding: 2em;
   h2 {
     color: $second-black;
   }
+}
+hr {
+  color: #f2f2f2f2;
 }
 .contact-section:before {
   transform-origin: 10% 0;
@@ -317,14 +329,15 @@ section.diagonal {
   left: -28%;
   z-index: -1;
   width: 150%;
+ 
   height: 100%;
   background: white;
 }
 .diagonal:before {
-  -webkit-transform: rotate(4);
-  transform: rotate(-2deg);
-  -webkit-transform-origin: 4% 0;
-  transform-origin: 10% 0;
+  // -webkit-transform: rotate(4);
+  // transform: rotate(-2deg);
+  // -webkit-transform-origin: 4% 0;
+  // transform-origin: 10% 0;
   top: 0;
   left: -28%;
   z-index: -1;
@@ -332,9 +345,27 @@ section.diagonal {
   height: 100%;
   background: white;
 }
-.diagonal-skills {
-  background: #f2f2f2;
-  transform: rotate(-0deg);
+.diagonal-skills:before {
+  top: 0;
+  left: -28%;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background: white;
+}
+
+// Skills
+.bg-black {
+  img {
+    background-color: blue;
+  }
+}
+#page-header-skills {
+  font-family: $header;
+  font-size: 2.5em;
+  color: #fb626b;
+  font-weight: bold;
+  font-style: normal;
 }
 //Footer
 

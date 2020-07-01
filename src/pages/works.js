@@ -61,9 +61,9 @@ function WorksPage() {
           </Col>
         </Row>
 
-        <Row className="row-projects  row-to-shrink  ">
+        <Row className="row-projects   row-to-shrink  ">
           {projects.map((item) => (
-            <Col md={6} sm={12} className=" " key={item.id}>
+            <Col md={6} sm={12} className="col-works " key={item.id}>
               <img
                 className="img-responsive project-img "
                 src={item.image}
@@ -96,8 +96,6 @@ function WorksPage() {
           ))}
         </Row>
       </section>
-
-      {/* <hr /> */}
     </>
   );
 }
