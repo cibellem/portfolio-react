@@ -46,7 +46,7 @@ function Skills() {
       <section className="diagonal-skills   section-all ">
         {/* <hr /> */}
 
-        <Row id="about" className="text-center  pb-4   ">
+        <Row id="about" className="text-center   ">
           <Col>
             <h2 id="page-header-skills">Skills</h2>
             <small></small>
