@@ -13,8 +13,8 @@ function HomePage() {
     <>
       <Hero />
       <Works />
-      {/* <Skills /> */}
       <About />
+      <Skills />
       <Contact />
     </>
   );

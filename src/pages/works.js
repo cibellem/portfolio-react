@@ -55,17 +55,17 @@ function WorksPage() {
   return (
     <>
       <section class="diagonal" id="works">
-        <Row className="text-center  py-4 ">
+        <Row className="text-center pb-4 pt-4">
           <Col>
             <h2 className="page-header ">Projects</h2>
           </Col>
         </Row>
 
-        <Row className="row-projects   row-to-shrink  ">
+        <Row className="row-projects  row-to-shrink  ">
           {projects.map((item) => (
-            <Col md={6} sm={12} className="col-works " key={item.id}>
+            <Col md={6} sm={12} className="col-works  " key={item.id}>
               <img
-                className="img-responsive project-img "
+                className="img-responsive project-img  "
                 src={item.image}
                 alt="Project Image"
               />

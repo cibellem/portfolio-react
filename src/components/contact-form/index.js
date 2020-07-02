@@ -85,7 +85,7 @@ function ContactForm() {
       </Form.Group>
       <Form.Group>
         <Button type="button" className="submit-button" onClick={handleForm}>
-          Send now
+          Send
         </Button>
       </Form.Group>
     </Form>
