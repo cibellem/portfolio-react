@@ -33,7 +33,7 @@ body {
 //Nav
 .navbar {
   // box-shadow: 0px 3px 6px rgba(136, 134, 134, 0.383);
-  padding: 40px 40px;
+  padding: 30px 40px;
 }
 
 .nav-link {
@@ -41,11 +41,8 @@ body {
   color: $black-mute !important;
   font-size: 18px;
   position: relative;
-  margin-top: 10px;
+  // margin-top: 10px;
   font-weight: 700;
-}
-.nav-link:visited {
-  text-decoration: underline white;
 }
 
 .nav-bar-collapse {
@@ -61,7 +58,11 @@ div.brackets a:after {
   top: 0px;
   transition: all 0.3s;
 }
-
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  color: red;
+}
 div.brackets a:before {
   content: "(";
   left: 0px;
@@ -85,7 +86,7 @@ div.brackets a:hover:after {
   font-weight: bold;
   font-size: 4em;
   color: whitesmoke;
-  // margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 #home {
   padding: 60px 0px;
@@ -206,7 +207,7 @@ form {
 }
 
 .section-all {
-  padding: 50px 20px;
+  padding: 40px 0px;
 }
 // Works Page
 
@@ -220,6 +221,11 @@ form {
     color: $second-black;
     font-size: 18px;
     font-weight: 600;
+  }
+  h6 {
+    color: $black-mute;
+    font-size: 14px;
+    font-weight: 400;
   }
   i {
     display: inline-flex;
@@ -268,7 +274,6 @@ form {
   max-width: 100%;
   border-radius: 5px;
   border: 2px rgba(27, 26, 26, 0.096) solid;
-  opacity: 0.9;
 }
 
 section {
@@ -299,7 +304,7 @@ section.diagonal {
 }
 
 .col-works {
-  padding: 20px 20px;
+  padding-bottom: 30px;
 }
 .contact-section,
 .diagonal-skills {
@@ -311,13 +316,15 @@ section.diagonal {
 }
 .skill-row {
   margin-left: 100px;
+  padding-top: 0;
 }
 hr {
   color: #f2f2f2f2;
 }
 .row-to-shrink {
-  padding: 60px 20px;
+  padding: 60px 30px;
 }
+
 .contact-section:before {
   transform-origin: 10% 0;
   top: 0;
@@ -348,11 +355,15 @@ hr {
 // Skills
 
 .skill-paragraph {
-  font-size: 22px;
+  font-size: 26px;
   text-align: left;
   color: $second-black;
   font-family: $header;
   font-weight: bold;
+}
+.skill-paragraph i {
+  color: #ff8f76;
+  font-size: 28px;
 }
 
 .skill-list {
@@ -361,9 +372,11 @@ hr {
   padding-left: 0;
   color: $black-mute;
   font-size: 18px;
-
   padding: 4px 4px;
   background-color: #f2f2f2;
+}
+.fa-window-minimize {
+  color: #ff8f76;
 }
 #page-header-skills {
   font-family: $header;
@@ -426,14 +439,15 @@ footer {
 
 .footer-distributed .footer-left {
   width: auto;
+  padding-right: 20px;
 }
 .footer-distributed span {
   font-size: 12px;
-  color: gray;
+  color: rgba(192, 192, 192, 0.787);
 }
 
 .footer-distributed h4 {
-  color: silver;
+  color: #f2f2f2d5;
   font-family: $body;
   margin: 0;
 }
@@ -441,7 +455,7 @@ footer {
 /* The company logo */
 
 .footer-distributed .footer-company-name {
-  color: gray;
+  color: rgba(192, 192, 192, 0.787);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -530,9 +544,13 @@ footer {
     line-height: 28px;
     text-align: left;
   }
-  // .row-to-shrink {
-  //   padding: 40px;
-  // }
+  .row-to-shrink {
+    padding: 0px 20px;
+  }
+
+  .col-to-shrink {
+    padding: 0px 30px;
+  }
   // .row-projects {
   //   padding: 0;
   // }

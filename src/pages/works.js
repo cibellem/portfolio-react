@@ -69,13 +69,14 @@ function WorksPage() {
                 src={item.image}
                 alt="Project Image"
               />
-              <Row>
+              <Row className="py-2">
                 <Col>
                   <p className="hashtags">
                     <h5 className="">{item.title}</h5>
-                    {item.description}
+                    <h6> {item.description}</h6>
+
                     <div className="container">
-                      <div className="row mt-2">
+                      <div className="row pt-2">
                         <div className="col">
                           <a id="gihub-link" href={item.github}>
                             {" "}

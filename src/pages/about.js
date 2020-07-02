@@ -7,12 +7,12 @@ function AboutPage() {
   return (
     <>
       <section className="about-section section-all ">
-        <Row id="about" className="text-center  row-to-shrink  ">
+        <Row id="about" className="text-center pt-3  ">
           <Col className="">
             <h2 className="page-header text-white">About Me</h2>
           </Col>
         </Row>
-        <Row className="  ">
+        <Row className=" pb-3 row-to-shrink  ">
           <Col md={4} sm={12} className="">
             {" "}
             <p className="about-paragraph">

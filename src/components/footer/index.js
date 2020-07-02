@@ -7,8 +7,8 @@ import Col from "react-bootstrap/Col";
 function Footer() {
   return (
     <footer class="footer-distributed ">
-      <div className="container">
-        <div class="footer-left">
+      <div className="container text-center">
+        <div class="footer-left col">
           <h4>Cibelle Montor</h4>
 
           <p class="footer-company-name">© 2020 Copyright</p>

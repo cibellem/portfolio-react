@@ -43,50 +43,59 @@ function Skills() {
   let design = [{ name: "Figma" }];
   return (
     <>
-      <section className="diagonal-skills   section-all ">
+      <section className="diagonal-skills  section-all ">
         {/* <hr /> */}
 
-        <Row id="about" className="text-center   ">
+        <Row  className="text-center pt-3  ">
           <Col>
             <h2 id="page-header-skills">Skills</h2>
-            <small></small>
+          
           </Col>
         </Row>
 
         <Row className=" row-to-shrink skill-row ">
-          <Col md={4} sm={12} className="skill-col">
-            <p className="skill-paragraph">
+          <Col md={4} sm={6} className="skill-col">
+            <h6 className="skill-paragraph">
               {" "}
-              <i class="fas fa-code  pr-2"></i> Front End
-            </p>
+              Front End <i class="fas fa-code pl-2"></i>
+            </h6>
+            <p></p>
             {frontEnd.map((item) => (
               <ul className="list-group list-group-flush">
-                <li className="list-group-item skill-list col-6">
-                  {item.name}
+                <li className="list-group-item skill-list">
+                  <i class="far fa-window-minimize pr-1"></i> {item.name}
                 </li>
               </ul>
             ))}
           </Col>
-          <Col md={4} sm={12} className="skill-col">
-            <p className="skill-paragraph">
+          <Col md={4} sm={6} className="skill-col">
+            <h6 className="skill-paragraph">
               {" "}
-              <i class="fas fa-server  pr-2"></i> Back End
-            </p>
+              Back End <i class="fas fa-server  pl-2"></i>
+            </h6>
+
             {backEnd.map((item) => (
               <ul className="list-group list-group-flush">
-                <li className="list-group-item skill-list">{item.name}</li>
+                <li className="list-group-item skill-list">
+                  {" "}
+                  <i class="far fa-window-minimize pr-1"></i> {item.name}
+                </li>
               </ul>
             ))}
           </Col>
-          <Col md={4} sm={12} className="skill-col">
+          <Col md={4} sm={6} className="skill-col">
             {" "}
-            <p className="skill-paragraph">
+            <h6 className="skill-paragraph">
               {" "}
-              <i class="fas fa-pencil-ruler pr-2"></i>Design
-            </p>
+              Design <i class="fas fa-pencil-ruler pr-2"></i>
+            </h6>
             {design.map((item) => (
               <ul className="list-group list-group-flush">
-                <li className="list-group-item skill-list">{item.name}</li>
+                <li className="list-group-item skill-list">
+                  {" "}
+                  <i class="far fa-window-minimize pr-1"></i>
+                  {item.name}
+                </li>
               </ul>
             ))}
           </Col>
