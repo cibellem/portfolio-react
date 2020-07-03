@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 
 function Hero() {
   return (
-    <Row id="home" className="row-shared row-to-shrink ">
+    <Row id="home" className="row-shared row-to-shrink  ">
       <Col className="col-to-shrink" lg={6} md={6} xs={12}>
         {" "}
         <h1 className="hero-header">Welcome</h1>

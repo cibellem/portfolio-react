@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Hero from "../components/hero";
+import "./style.scss";
 
 import Container from "react-bootstrap/Container";
 import Works from "./works";
@@ -11,7 +12,7 @@ function HomePage() {
   const [darkThese, setDarkTheme] = useState("");
   return (
     <>
-      <Hero />
+      <Hero  />
       <Works />
       <About />
       <Skills />
