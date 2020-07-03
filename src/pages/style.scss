@@ -564,8 +564,9 @@ footer {
   }
 }
 
-// @media screen and (min-width: 1900px) {
-//   .diagonal:before {
-//     width: 150%;
-//   }
-// }
+@media screen and (min-width: 1900px) {
+  .diagonal:before,
+  .diagonal-skills:before {
+    width: 200%;
+  }
+}
