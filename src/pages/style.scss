@@ -566,7 +566,9 @@ footer {
 
 @media screen and (min-width: 1900px) {
   .diagonal:before,
-  .diagonal-skills:before {
+  .diagonal-skills:before,
+  .contact-section:before {
     width: 200%;
+    left: -36%;
   }
 }
