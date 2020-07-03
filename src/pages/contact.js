@@ -10,8 +10,8 @@ function ContactPage() {
     <section className="contact-section  section-all">
       <Row id="contact" className="text-left  row-to-shrink  pb-4 ">
         <Col className="d-flex-row justify-around" md={6} xs={12}>
-          <h2 className=" page-header">Reach out!</h2>{" "}
-          <h6 className="contact-form-header">
+          <h2 className=" page-header pb-2">Reach out!</h2>{" "}
+          <h6 className="contact-form-header mr-5">
             Interested in colaborating or believe I would be a good addition to
             your team? Drop me a message!
           </h6>

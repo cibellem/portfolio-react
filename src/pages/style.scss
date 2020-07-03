@@ -197,10 +197,10 @@ form {
 
 // About Page
 .about-paragraph {
-  color: $black-mute;
+  color: floralwhite;
   font-family: $body;
-  font-size: 16px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 36px;
   font-weight: 300;
   text-align: left;
 }
@@ -208,7 +208,7 @@ form {
 .section-all {
   padding: 40px 0px;
 }
-// Works Page
+// ============ Works Page ============
 
 .hashtags {
   color: $second-black;
@@ -275,16 +275,14 @@ form {
   border: 2px rgba(27, 26, 26, 0.096) solid;
 }
 
-section {
+section,
+.section {
   position: relative;
   background: none;
-  // color: #fff;
-  text-align: center;
-
-  justify-content: space-around;
 }
 
-section:before {
+section:before,
+.section:before {
   position: absolute;
   content: "";
 }
@@ -294,6 +292,7 @@ section.diagonal {
   // padding: 50px 0px;
 }
 .diagonal {
+  text-align: center;
   z-index: 1;
   padding: 40px 0px;
   // padding: 3em;
@@ -313,15 +312,9 @@ section.diagonal {
     color: $second-black;
   }
 }
-.skill-row {
-  margin-left: 100px;
-  padding-top: 0;
-}
-hr {
-  color: #f2f2f2f2;
-}
+
 .row-to-shrink {
-  padding: 60px 30px;
+  padding: 60px 0px;
 }
 
 .contact-section:before {
@@ -340,18 +333,11 @@ hr {
   width: 180%;
   height: 100%;
   background: white;
-}
-.diagonal-skills:before {
-  top: 0;
-  left: -28%;
-  z-index: -1;
-  width: 180%;
-  height: 100%;
-
-  background: #f2f2f2;
+  border-top: 10px rgba(231, 56, 85, 0.842) solid;
+  border-bottom: 10px rgba(231, 56, 85, 0.842) solid;
 }
 
-// Skills
+//============= Skills ==============
 
 .skill-paragraph {
   font-size: 26px;
@@ -364,7 +350,15 @@ hr {
   color: #ff8f76;
   font-size: 28px;
 }
-
+.skill-col {
+  display: table-cell;
+  float: none;
+  vertical-align: top;
+}
+.skill-row {
+  margin-left: 152px;
+  padding: 20px 0px;
+}
 .skill-list {
   font-family: $body;
   text-align: left;
@@ -383,6 +377,17 @@ hr {
   color: #f62d53;
   font-weight: bold;
   font-style: normal;
+}
+al-skills:before {
+  top: 0;
+  left: -28%;
+  z-index: -1;
+  width: 180%;
+  height: 100%;
+  background: #f2f2f2;
+  border-top: 10px rgba(255, 192, 203, 0.493) solid;
+  border-top: 10px rgba(231, 56, 85, 0.842) solid;
+  border-bottom: 10px #a1a1a107 solid;
 }
 //Footer
 
@@ -421,7 +426,6 @@ footer {
   padding: 30px 30px 40px 30px;
   color: $black-mute;
   font-size: 14px;
-
   justify-content: space-around;
   align-items: center;
   display: flex;
@@ -518,7 +522,6 @@ footer {
 @media screen and (max-width: 600px) {
   .diagonal:before {
     left: -47%;
-
     width: 183%;
     height: 100%;
   }
@@ -550,9 +553,6 @@ footer {
   .col-to-shrink {
     padding: 0px 30px;
   }
-  // .row-projects {
-  //   padding: 0;
-  // }
 
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,

@@ -43,64 +43,61 @@ function Skills() {
   let design = [{ name: "Figma" }];
   return (
     <>
-      <section className="diagonal-skills  section-all ">
-        {/* <hr /> */}
-
-        <Row  className="text-center pt-3  ">
-          <Col>
-            <h2 id="page-header-skills">Skills</h2>
-          
-          </Col>
+      {/* <hr /> */}
+      <div className="diagonal-skills section section-all">
+        <Row className="text-center pt-3  ">
+          <Col id="page-header-skills">Skills</Col>
         </Row>
+        <div>
+          <Row className=" text-center row-to-shrink skill-row ">
+            <Col md={4} className="skill-col ">
+              <h6 className="skill-paragraph">
+                {" "}
+                Front End <i class="fas fa-code pl-2"></i>
+              </h6>
+              <p></p>
+              {frontEnd.map((item) => (
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item skill-list">
+                    <i class="far fa-window-minimize pr-1"></i> {item.name}
+                  </li>
+                </ul>
+              ))}
+            </Col>
+            <Col md={4} className="skill-col">
+              <h6 className="skill-paragraph">
+                {" "}
+                Back End <i class="fas fa-server  pl-2"></i>
+              </h6>
 
-        <Row className=" row-to-shrink skill-row ">
-          <Col md={4} sm={6} className="skill-col">
-            <h6 className="skill-paragraph">
+              {backEnd.map((item) => (
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item skill-list">
+                    {" "}
+                    <i class="far fa-window-minimize pr-1"></i> {item.name}
+                  </li>
+                </ul>
+              ))}
+            </Col>
+            <Col md={4} className="skill-col">
               {" "}
-              Front End <i class="fas fa-code pl-2"></i>
-            </h6>
-            <p></p>
-            {frontEnd.map((item) => (
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item skill-list">
-                  <i class="far fa-window-minimize pr-1"></i> {item.name}
-                </li>
-              </ul>
-            ))}
-          </Col>
-          <Col md={4} sm={6} className="skill-col">
-            <h6 className="skill-paragraph">
-              {" "}
-              Back End <i class="fas fa-server  pl-2"></i>
-            </h6>
-
-            {backEnd.map((item) => (
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item skill-list">
-                  {" "}
-                  <i class="far fa-window-minimize pr-1"></i> {item.name}
-                </li>
-              </ul>
-            ))}
-          </Col>
-          <Col md={4} sm={6} className="skill-col">
-            {" "}
-            <h6 className="skill-paragraph">
-              {" "}
-              Design <i class="fas fa-pencil-ruler pr-2"></i>
-            </h6>
-            {design.map((item) => (
-              <ul className="list-group list-group-flush">
-                <li className="list-group-item skill-list">
-                  {" "}
-                  <i class="far fa-window-minimize pr-1"></i>
-                  {item.name}
-                </li>
-              </ul>
-            ))}
-          </Col>
-        </Row>
-      </section>
+              <h6 className="skill-paragraph">
+                {" "}
+                Design <i class="fas fa-pencil-ruler pr-2"></i>
+              </h6>
+              {design.map((item) => (
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item skill-list">
+                    {" "}
+                    <i class="far fa-window-minimize pr-1"></i>
+                    {item.name}
+                  </li>
+                </ul>
+              ))}
+            </Col>
+          </Row>
+        </div>
+      </div>
     </>
   );
 }
