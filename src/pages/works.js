@@ -2,11 +2,11 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import shelfie from "../pages/assets/shelfie.svg";
-import wx from "../pages/assets/wx.svg";
+import shelfie from "../pages/assets/book.png";
+import wx from "../pages/assets/wx.png";
 import pleasantly from "../pages/assets/pleasantly.svg";
-import ck from "../pages/assets/ck.svg";
-import plantare from "../pages/assets/plantare.svg";
+import ck from "../pages/assets/ck.png";
+import plantare from "../pages/assets/plantare.png";
 
 function WorksPage() {
   const projects = [

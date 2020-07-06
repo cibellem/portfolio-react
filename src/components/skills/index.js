@@ -45,7 +45,7 @@ function Skills() {
     <>
       {/* <hr /> */}
       <div className="diagonal-skills section section-all">
-        <Row className="text-center pt-3  ">
+        <Row className="text-center pt-3 skill-header-row  ">
           <Col id="page-header-skills">Skills</Col>
         </Row>
         <div>

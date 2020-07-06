@@ -7,9 +7,9 @@ function AboutPage() {
   return (
     <>
       <section className="about-section section-all ">
-        <Row id="about" className="text-center pt-3  ">
+        <Row id="about" className="text-center pt-3 pb-3  ">
           <Col className="">
-            <h2 className="page-header text-white">About Me</h2>
+            <h2 className="page-header ">About Me</h2>
           </Col>
         </Row>
         <Row className=" pb-3 row-to-shrink  ">
