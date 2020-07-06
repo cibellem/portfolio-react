@@ -12,7 +12,7 @@ function AboutPage() {
             <h2 className="page-header ">About Me</h2>
           </Col>
         </Row>
-        <Row className=" pb-3 row-to-shrink  ">
+        <Row className=" pb-3 row-to-shrink  ">   
           <Col md={4} sm={12} className="">
             {" "}
             <p className="about-paragraph">

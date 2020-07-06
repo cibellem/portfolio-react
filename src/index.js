@@ -24,7 +24,7 @@ function App() {
         {/* <button onClick={() => themeState.toggle()}>
             {themeState.dark ? "Switch to Light Mode" : "Switch to Dark Mode"}
           </button> */}
-        <Container className="container">
+        <Container className="app-container">
           <HomePage />
         </Container>
 

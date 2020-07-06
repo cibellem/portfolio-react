@@ -24,7 +24,7 @@ function NavBar() {
             smooth={true}
             duration={500}
           >
-            Works
+            My Projects
           </a>
           <a
             className="px-4  nav-link"
@@ -33,6 +33,14 @@ function NavBar() {
             duration={500}
           >
             About
+          </a>
+          <a
+            className="px-4  nav-link"
+            href="#skills"
+            smooth={true}
+            duration={500}
+          >
+            Skills
           </a>
           <a
             className="px-4  nav-link"

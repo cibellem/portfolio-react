@@ -55,44 +55,50 @@ function WorksPage() {
   return (
     <>
       <section class="diagonal" id="works">
-        <Row className="text-center pb-4 pt-4">
+        {/* <Row className="text-center pb-4 pt-4">
           <Col>
             <h2 className="page-header ">Projects</h2>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row className="row-projects  row-to-shrink  ">
           {projects.map((item) => (
             <Col md={6} sm={12} className="col-works  " key={item.id}>
-              <img
-                className="img-responsive project-img  "
-                src={item.image}
-                alt="Project Image"
-              />
-              <Row className="py-2">
-                <Col>
-                  <p className="hashtags">
-                    <h5 className="">{item.title}</h5>
-                    <h6> {item.description}</h6>
+              {" "}
+              <div className="card p-3">
+                <h5 className="text-left">{item.title}</h5>
 
-                    <div className="container">
-                      <div className="row pt-2">
-                        <div className="col">
-                          <a id="gihub-link" href={item.github}>
-                            {" "}
-                            Source Code
-                            <i class="pl-2  fal fa-angle-right"></i>
-                          </a>
-                          <a id="app-link" href={item.liveApp}>
-                            Live App
-                            <i class="pl-2   fal fa-angle-right"></i>
-                          </a>
+                <div>
+                  <img
+                    className="img-responsive project-img  "
+                    src={item.image}
+                    alt="Project Image"
+                  />
+                </div>
+                <Row className="py-2">
+                  <Col>
+                    <p className="hashtags">
+                      <h6> {item.description}</h6>
+
+                      <div className="container">
+                        <div className="row pt-2">
+                          <div className="col">
+                            <a id="gihub-link" href={item.github}>
+                              {" "}
+                              Source Code
+                              <i class="pl-2  fal fa-angle-right"></i>
+                            </a>
+                            <a id="app-link" href={item.liveApp}>
+                              Live App
+                              <i class="pl-2   fal fa-angle-right"></i>
+                            </a>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </p>
-                </Col>
-              </Row>
+                    </p>
+                  </Col>
+                </Row>
+              </div>
             </Col>
           ))}
         </Row>

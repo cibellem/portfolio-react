@@ -88,8 +88,24 @@ div.brackets a:hover:after {
   color: #ff8f76;
   padding-bottom: 5%;
 }
+
+.hero-button {
+  font-family: $body;
+  border: none;
+  font-style: 14px;
+  color: white;
+  background-color: $second-black;
+  padding: 8px 30px;
+  box-shadow: 0px 3px 6px silver;
+}
+
+.hero-button:hover {
+  box-shadow: 0px 3px 6px rgb(80, 79, 79);
+  transition: 0.5s;
+}
 #home {
-  padding: 90px 30px;
+  padding: 90px 10px;
+  height: 80vh;
 }
 .hero-text {
   font-family: $body;
@@ -275,10 +291,10 @@ form {
 
 .project-img {
   height: auto;
-  box-shadow: 0px 3px 4px rgba(8, 8, 8, 0.459);
+  box-shadow: 0px 3px 6px rgba(8, 8, 8, 0.459);
   max-width: 80%;
-  border-radius: 5px;
-  border: 2px rgba(27, 26, 26, 0.096) solid;
+  border-radius: 20px;
+  // border: 2px rgba(27, 26, 26, 0.096) solid;
 }
 
 section,
@@ -304,6 +320,20 @@ section.diagonal {
   // padding: 3em;
   h2 {
     color: $second-black;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 4px 6px rgba(148, 148, 148, 0.39);
+  background-color: #f2f2f2a9;
+  background-color: #ff8f7655;
+  h5 {
+    font-family: $header;
+    color: $black-mute;
+    padding-bottom: 10px;
+    font-weight: bolder;
   }
 }
 
@@ -338,7 +368,7 @@ section.diagonal {
   z-index: -1;
   width: 180%;
   height: 100%;
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
   border-top: 2px #bebaba02 solid;
   border-bottom: 10px #a1a1a107 solid;
 }
@@ -348,7 +378,7 @@ section.diagonal {
 .skill-paragraph {
   font-size: 26px;
   text-align: left;
-  color: $second-black;
+  color: $black-mute;
   font-family: $header;
   font-weight: bold;
 }
@@ -380,7 +410,7 @@ section.diagonal {
 #page-header-skills {
   font-family: $header;
   font-size: 2.5em;
-  color: #f62d53;
+  color: $second-black;
   font-weight: bold;
   font-style: normal;
 }
@@ -391,6 +421,7 @@ section.diagonal {
   z-index: -1;
   width: 180%;
   height: 100%;
+
   background: #f2f2f2;
   border-bottom: 10px #a1a1a107 solid;
   border-bottom: 10px #a1a1a107 solid;
@@ -558,9 +589,12 @@ footer {
   }
 
   .project-img {
-    max-width: 100%;
+    max-width: 90%;
   }
-
+  #home {
+    padding: 10px 10px;
+    height: 80vh;
+  }
   .col-to-shrink {
     padding: 0px 30px;
   }

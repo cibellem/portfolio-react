@@ -8,13 +8,17 @@ function Hero() {
     <Row id="home" className="row-shared row-to-shrink  ">
       <Col className="col-to-shrink" lg={6} md={6} xs={12}>
         {" "}
-        <h1 className="hero-header">Welcome</h1>
+        <h1 className="hero-header">Hello!</h1>
         <p className="hero-text">
           {" "}
-          This is my website and I love what I do! I’m a Full Stack Web
-          Developer dedicated to building creative and user-friendly
-          applications.
+          I'm Cibelle, Full Stack Web Developer based in Phoenix-Arizona.
         </p>
+        <p className="hero-text">
+          {" "}
+          I love what I do and I'm glad you stopped by! I'm dedicated to
+          building creative, clean and user-friendly solutions.
+        </p>
+        {/* <button className="button hero-button">Projects</button> */}
       </Col>
       <Col className="text-right  " lg={6} md={6} xs={12}>
         <img
