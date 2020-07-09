@@ -52,7 +52,7 @@ body {
 div.brackets a:before,
 div.brackets a:after {
   position: absolute;
-  color: #ff8f76;
+  color: rgb(41, 180, 134);
   opacity: 0;
   font-size: 30px;
   top: 0px;
@@ -85,7 +85,8 @@ div.brackets a:hover:after {
   font-family: $header;
   font-weight: bold;
   font-size: 4em;
-  color: #ff8f76;
+
+  color: rgb(41, 180, 134);
   padding-bottom: 5%;
 }
 
@@ -113,6 +114,9 @@ div.brackets a:hover:after {
   color: $second-black;
   font-weight: 400;
   line-height: 1.8em;
+  span {
+    font-size: 20px;
+  }
 }
 
 .hero-image {
@@ -157,7 +161,7 @@ form {
     font-family: $header;
     font-size: 16px;
     background-color: #ff8f76;
-    background-color: #fb626b;
+    background-color: rgb(41, 180, 134);
     color: #f2f2f2;
     padding: 15px;
     border-radius: 10px;
@@ -192,7 +196,7 @@ form {
   font-size: 16px;
   font-weight: 300;
   i {
-    color: #f62d53 !important;
+    color: rgb(41, 180, 134);
     font-weight: bold;
     padding-right: 10px;
     padding-left: 0;
@@ -215,7 +219,7 @@ form {
 // About Page
 .about-section {
   h2 {
-    color: #ff8f76;
+    color: rgb(41, 180, 134);
   }
 }
 .about-paragraph {
@@ -265,23 +269,23 @@ form {
 #gihub-link {
   font-weight: lighter;
   background-color: #ff8f76;
-  padding: 5px 10px;
+  background-color: #a791f1;
+  padding: 6px 10px;
   font-size: 12px;
   color: #f2f2f2;
   border-radius: 9px;
-  // border: 1px solid #;
-  border-bottom: 3px solid rgb(248, 77, 88);
+  border-bottom: 3px solid #8161ed;
 }
 
 #app-link {
   font-weight: lighter;
-  background-color: #ff8f76;
-  padding: 5px 10px;
+  background-color: #a791f1;
+  padding: 6px 10px;
   margin-left: 2px;
   font-size: 12px;
   color: #f2f2f2;
   border-radius: 9px;
-  border-bottom: 3px solid rgb(248, 77, 88);
+  border-bottom: 3px solid #8161ed;
 }
 #app-link:hover,
 #gihub-link:hover {
@@ -293,7 +297,7 @@ form {
   height: auto;
   box-shadow: 0px 3px 6px rgba(8, 8, 8, 0.459);
   max-width: 80%;
-  border-radius: 20px;
+  border-radius: 0px;
   // border: 2px rgba(27, 26, 26, 0.096) solid;
 }
 
@@ -328,7 +332,8 @@ section.diagonal {
   border: none;
   box-shadow: 0px 4px 6px rgba(148, 148, 148, 0.39);
   background-color: #f2f2f2a9;
-  background-color: #ff8f7655;
+  background-color: #b5a7e446;
+
   h5 {
     font-family: $header;
     color: $black-mute;
@@ -383,8 +388,8 @@ section.diagonal {
   font-weight: bold;
 }
 .skill-paragraph i {
-  color: #ff8f76;
-  font-size: 28px;
+  // color: rgb(41, 180, 134) !important;
+  font-size: 2rem;
 }
 .skill-col {
   display: table-cell;
@@ -404,8 +409,10 @@ section.diagonal {
   padding: 4px 4px;
   background-color: #f2f2f2;
 }
-.fa-window-minimize {
+.fa-circle {
   color: #ff8f76;
+  color: #8261ed !important;
+  font-size: 10px;
 }
 #page-header-skills {
   font-family: $header;
@@ -431,12 +438,6 @@ section.diagonal {
 .copyright {
   padding: 10px;
 }
-
-// .row-shared {
-//   // height: 100vh;
-//   align-items: center;
-//   padding: 60px 0px;
-// }
 
 //Footer copied and pasted
 
@@ -527,6 +528,8 @@ footer {
 
 .footer-icons a {
   margin-right: 20px;
+  font-size: 2rem;
+  color: black;
 }
 
 /* Here is the code for Responsive Footer */
@@ -585,7 +588,7 @@ footer {
     text-align: left;
   }
   .row-to-shrink {
-    padding: 0px 40px;
+    padding: 0px 20px;
   }
 
   .project-img {

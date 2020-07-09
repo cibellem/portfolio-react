@@ -15,7 +15,7 @@ function Footer() {
           <span>Illustration by Stories by Freepik </span>
         </div>
 
-        <div class="footer-right row">
+        {/* <div class="footer-right row">
           <div class="footer-icons col">
             <a href="https://www.linkedin.com/in/cibelle-montor-2a1a58157/">
               <i class="fa fa-linkedin"></i>
@@ -28,7 +28,7 @@ function Footer() {
               <i class="fas fa-at"></i>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

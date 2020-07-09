@@ -11,14 +11,24 @@ function Hero() {
         <h1 className="hero-header">Hello!</h1>
         <p className="hero-text">
           {" "}
-          I'm Cibelle, Full Stack Web Developer based in Phoenix-Arizona.
+          <span>I'm Cibelle,</span> Full Stack Web Developer with an eye to
+          design. Working on building creative, clean and user-friendly
+          solutions.
         </p>
-        <p className="hero-text">
-          {" "}
-          I love what I do and I'm glad you stopped by! I'm dedicated to
-          building creative, clean and user-friendly solutions.
-        </p>
+        <p className="hero-text"> </p>
         {/* <button className="button hero-button">Projects</button> */}
+        <div class="footer-icons ">
+          <a href="https://www.linkedin.com/in/cibelle-montor-2a1a58157/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/cibellem">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:montorcibelle@gmail.com">
+            {" "}
+            <i class="fas fa-at"></i>
+          </a>
+        </div>
       </Col>
       <Col className="text-right  " lg={6} md={6} xs={12}>
         <img

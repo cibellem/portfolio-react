@@ -15,10 +15,16 @@ function Skills() {
       name: "SASS",
     },
     {
+      name: "Bootstrap",
+    },
+    {
       name: "JavaScript",
     },
     {
       name: "jQuery",
+    },
+    {
+      name: "React",
     },
   ];
 
@@ -40,7 +46,7 @@ function Skills() {
     },
   ];
 
-  let design = [{ name: "Figma" }];
+  let design = [{ name: "Figma" }, { name: "Git" }, { name: "Postman" }];
   return (
     <>
       {/* <hr /> */}
@@ -59,7 +65,7 @@ function Skills() {
               {frontEnd.map((item) => (
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item skill-list">
-                    <i class="far fa-window-minimize pr-1"></i> {item.name}
+                    <i class="fas fa-circle pr-1"></i> {item.name}
                   </li>
                 </ul>
               ))}
@@ -74,7 +80,7 @@ function Skills() {
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item skill-list">
                     {" "}
-                    <i class="far fa-window-minimize pr-1"></i> {item.name}
+                    <i class="fas fa-circle pr-1"></i> {item.name}
                   </li>
                 </ul>
               ))}
@@ -83,13 +89,13 @@ function Skills() {
               {" "}
               <h6 className="skill-paragraph">
                 {" "}
-                Design <i class="fas fa-pencil-ruler pr-2"></i>
+                Other Techs <i class="fas fa-pencil-ruler pr-2"></i>
               </h6>
               {design.map((item) => (
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item skill-list">
                     {" "}
-                    <i class="far fa-window-minimize pr-1"></i>
+                    <i class="fas fa-circle pr-1"></i>
                     {item.name}
                   </li>
                 </ul>
