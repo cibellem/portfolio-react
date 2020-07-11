@@ -9,10 +9,9 @@ import Contact from "./contact";
 import Skills from "../components/skills";
 
 function HomePage() {
-  const [darkThese, setDarkTheme] = useState("");
   return (
     <>
-      <Hero  />
+      <Hero />
       <Works />
       <About />
       <Skills />

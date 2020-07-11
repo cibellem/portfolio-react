@@ -6,6 +6,7 @@ $header: "Domine", serif;
 $body: "Lora", serif;
 // ##### Colors #####
 $tomato: #054986;
+$green: rgb(41, 180, 134);
 $black: #000000;
 $gray: rgba(0, 0, 0, 0.29);
 $second-black: #4e4d4d;
@@ -107,6 +108,11 @@ div.brackets a:hover:after {
 #home {
   padding: 90px 10px;
   height: 80vh;
+
+  height: 80vh;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
 }
 .hero-text {
   font-family: $body;
@@ -128,7 +134,7 @@ div.brackets a:hover:after {
 
 .page-header {
   font-family: $header;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   font-style: normal;
 }
@@ -232,7 +238,7 @@ form {
 }
 
 .section-all {
-  padding: 40px 0px;
+  padding: 50px 0px;
 }
 // ============ Works Page ============
 
@@ -264,6 +270,24 @@ form {
   p {
     margin-top: 0px;
   }
+}
+
+.projects-header {
+  text-decoration: none;
+  position: relative;
+}
+
+.projects-header:after {
+  content: "";
+
+  width: 2%;
+  position: absolute;
+  left: 0px;
+  bottom: -3px;
+  border-width: 0 0 4px;
+  border-style: solid;
+  color: $green;
+  opacity: 0.8;
 }
 
 #gihub-link {
@@ -354,9 +378,9 @@ section.diagonal {
   }
 }
 
--to-shrink {
-  padding: 60px 0px;
-}
+// .row-to-shrink {
+//   padding: 50px 0px;
+// }
 
 .contact-section:before {
   transform-origin: 10% 0;
@@ -392,13 +416,20 @@ section.diagonal {
   font-size: 2rem;
 }
 .skill-col {
-  display: table-cell;
-  float: none;
-  vertical-align: top;
+  padding: 10px;
+  img {
+    height: auto;
+    max-width: 50%;
+  }
+  p {
+    font-family: $body;
+    font-size: 12px;
+    color: $black-mute;
+    font-weight: 500;
+  }
 }
 .skill-row {
-  margin-left: 152px;
-  padding: 20px 0px;
+  padding: 40px 100px;
 }
 .skill-list {
   font-family: $body;
@@ -416,7 +447,7 @@ section.diagonal {
 }
 #page-header-skills {
   font-family: $header;
-  font-size: 2.5em;
+  font-size: 2em;
   color: $second-black;
   font-weight: bold;
   font-style: normal;
@@ -456,12 +487,12 @@ footer {
 }
 
 .footer-distributed {
-  background-color: #464646;
+  background-color: #2a2a2a;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font-family: $body;
-  padding: 30px 30px 40px 30px;
+  padding: 20px 20px 30px 10px;
   color: $black-mute;
   font-size: 14px;
   justify-content: space-around;
@@ -549,7 +580,7 @@ footer {
     margin-left: 0;
   }
   .skill-row {
-    margin-left: 0px;
+    padding: 30px 50px;
   }
   .skill-col {
     padding-bottom: 40px;
@@ -565,7 +596,7 @@ footer {
     width: 183%;
     height: 100%;
   }
-  .page-header,
+  .skill .page-header,
   .page-header-skills {
     font-size: 2.5em;
   }
@@ -612,7 +643,13 @@ footer {
     margin-bottom: 30px;
   }
   .skill-col {
-    margin-left: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+  .skill-row {
+    margin-left: 0;
+    margin-right: 0;
   }
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,

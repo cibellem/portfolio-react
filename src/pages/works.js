@@ -55,11 +55,11 @@ function WorksPage() {
   return (
     <>
       <section class="diagonal" id="works">
-        {/* <Row className="text-center pb-4 pt-4">
+        <Row className="text-left pb-4 pt-4">
           <Col>
-            <h2 className="page-header ">Projects</h2>
+            <h2 className="page-header projects-header ">Projects</h2>
           </Col>
-        </Row> */}
+        </Row>
 
         <Row className="row-projects  row-to-shrink  ">
           {projects.map((item) => (
