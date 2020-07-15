@@ -19,7 +19,7 @@ function AboutPage() {
               Hey there, thanks for sticking around! I'm Cibelle and I’m a Full
               Stack Web Developer who decided to make her addiction of creating
               short cuts and command-lines for my mIRC into a
-              profession.(Remember that?).I'm a former teacher who loves being
+              profession(Remember that?).I'm a former teacher who loves being
               exposed to different concepts, cultures and people.
             </p>
           </Col>
