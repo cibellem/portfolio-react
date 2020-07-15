@@ -16,22 +16,23 @@ function AboutPage() {
           <Col md={4} sm={12} className="">
             {" "}
             <p className="about-paragraph">
-              Hi, and thanks for sticking around! You probably would like to
-              know more about me... I was a teacher in 2018 when I decided to
-              switch careers and study to become a Full Stack Web Developer. My
-              path to tech really started back in 2002 when I used be addicted
-              to creating short cuts and command-lines for my mIRC .
+              Hey there, thanks for sticking around! I'm Cibelle and I’m a Full
+              Stack Web Developer who decided to make her addiction of creating
+              short cuts and command-lines for my mIRC into a
+              profession.(Remember that?).I'm a former teacher who loves being
+              exposed to different concepts, cultures and people.
             </p>
           </Col>
           <Col md={4} sm={12} className="">
             {" "}
             <p className="about-paragraph">
-              In 2019, I earned my Full Stack - Web Developer Certificate from
-              the University of Arizona Coding Bootcamp. There I honed my skills
-              in both Front and Back End technologies. I've always had a thirst
-              to learn new things and the coding bootcamp started me on a new
-              path to do exactly that - I am still constantly learning and
-              working to add to my skillset.
+              I'm an effective learner who's continually looking for ways to
+              grow both professionally and as a person. I'm commited to become
+              the best version of myself every day. I'm currently proficient in
+              the MERN Stack and very much interested to add more skills to my
+              list. I put my heart into every project and my top priority is
+              delivering a final product that goes above and beyond my
+              customer's expectations.
             </p>
           </Col>
           <Col md={4} sm={12} className="">
