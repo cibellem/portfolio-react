@@ -13,7 +13,7 @@ function WorksPage() {
     {
       id: 1,
       image: shelfie,
-      description: "#react #mongodb #node #google-books-api #REST-apis #JSON",
+      description: "#react #mongodb #node #google-books-api #REST-API #JSON",
       github: "https://github.com/cibellem/react-bookSearch",
       liveApp: "https://react-book-shelfie.herokuapp.com/",
       title: "Shelfie",
@@ -45,7 +45,7 @@ function WorksPage() {
     {
       id: 5,
       image: plantare,
-      description: "#react #mongodb #nodejs #enzyme #jasmine #firebase ",
+      description: "#react #mongodb #nodejs #enzyme #jasmine #firebase #stripe",
       github: "https://github.com/cibellem/plantare",
       liveApp: "https://plantare.herokuapp.com/",
       title: "Plantare",
@@ -81,6 +81,7 @@ function WorksPage() {
                       <h6> {item.description}</h6>
 
                       <div className="container">
+                        <p>{item.about}</p>
                         <div className="row pt-2">
                           <div className="col">
                             <a id="gihub-link" href={item.github}>
