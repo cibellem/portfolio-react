@@ -12,10 +12,6 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <Works />
-      <About />
-      <Skills />
-      <Contact />
     </>
   );
 }

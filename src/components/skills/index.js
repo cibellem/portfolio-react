@@ -88,12 +88,20 @@ function Skills() {
   // ];
 
   // let design = [{ name: "Figma" }, { name: "Git" }, { name: "Postman" }];
+  //diagonal-skills
   return (
     <>
-      {/* <hr /> */}
-      <div className="diagonal-skills section section-all">
+      <div className=" section section-all">
         <Row id="skills" className="text-center pt-3 skill-header-row  ">
           <Col id="page-header-skills">Skills</Col>
+        </Row>
+        <Row className="text-center skill-header-row  ">
+          <Col>
+            <h5>
+              Below are the tools I'm proficient and feel confortable working
+              with:
+            </h5>{" "}
+          </Col>
         </Row>
 
         <Row className=" text-center  row-to-shrink skill-row ">
