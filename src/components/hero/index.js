@@ -12,7 +12,7 @@ function Hero() {
         <p className="hero-text">
           {" "}
           <span>I'm Cibelle,</span> Full Stack Web Developer based in Phoenix,
-          Arizona. I'm working on building creative, clean and user-friendly
+          Arizona. I'm building data-driven, creative,  and user-friendly
           solutions.
         </p>
         <p className="hero-text"> </p>

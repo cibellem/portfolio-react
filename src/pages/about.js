@@ -33,23 +33,23 @@ function AboutPage() {
             {" "}
             <p className="about-paragraph">
               I'm an effective learner who's continually looking for ways to
-              grow both professionally and as a person. In each and every
-              project I put my heart on it and my top priority is delivering a
-              final product that goes above and beyond my customer's
-              expectations. I'm currently proficient in the MERN Stack and very
-              much interested to add more skills to my list.
+              grow both professionally and as a person. I put my heart into each
+              and every project on it and my top priority is delivering a final
+              product that goes above and beyond client expectations. I'm very
+              much interested to add more skills to my list and I expect to
+              learn and be challenged in my next roles.
             </p>
           </Col>
         </Row>
         <Row className=" pb-3 row-to-shrink  ">
           <Col md={12} sm={12}>
             <p className="about-paragraph">
-              I’m proud to say I have always left a positive mark in my past
-              workplaces due to my ability work colaboratively and to build good
-              relationships with my coworkers. I'm always been known as a great
-              team player. I'm a proud Brazilian and I have been living in the
-              United States since 2015. When not coding I love to garden and
-              play soccer. &#x1F60E;
+              I have always left a positive mark in my past workplaces due to my
+              ability to work colaboratively and to build good relationships
+              with my coworkers. I'm always been known as a great team player.
+              I'm a proud Brazilian and I have been living in the United States
+              since 2015. When not coding I love to garden and play soccer.
+              &#x1F60E;
             </p>
           </Col>
         </Row>
