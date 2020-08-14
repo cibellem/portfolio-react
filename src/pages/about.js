@@ -21,12 +21,12 @@ function AboutPage() {
             {" "}
             <p className="about-paragraph">
               Hey there, thanks for sticking around! I'm Cibelle and I'm a Full
-              Stack Javascript Developer who decided to make her addiction of
-              creating short cuts and command-lines for my
-              <a href="https://www.mirc.com/"> mIRC</a> into a profession. I'm a
-              former teacher who loves being exposed to different concepts,
-              cultures and people and I found in tech a place with endless
-              oportunities to pursue that.
+              Stack Javascript Developer who decided to make her addiction for
+              creating
+              <a href="https://www.mirc.com/"> mIRC</a> scripts into a
+              profession. I'm a former teacher who loves being exposed to
+              different concepts, cultures and people and I found in tech a
+              place with endless oportunities to pursue that.
             </p>
           </Col>
           <Col md={6} sm={12} className="pl-4">

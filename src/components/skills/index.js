@@ -98,8 +98,7 @@ function Skills() {
         <Row className="text-center skill-header-row  ">
           <Col>
             <h5>
-              Below are the tools I'm proficient and feel confortable working
-              with:
+              Below are the tools I'm proficient with:
             </h5>{" "}
           </Col>
         </Row>

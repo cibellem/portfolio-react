@@ -11,9 +11,8 @@ function Hero() {
         <h1 className="hero-header">Hello!</h1>
         <p className="hero-text">
           {" "}
-          <span>I'm Cibelle,</span> Full Stack Web Developer based in Phoenix,
-          Arizona. I'm building data-driven, creative,  and user-friendly
-          solutions.
+          I'm Cibelle, Full Stack Web Developer based in Phoenix, Arizona. I'm
+          building data-driven, creative, and user-friendly solutions.
         </p>
         <p className="hero-text"> </p>
         {/* <button className="button hero-button">Projects</button> */}
