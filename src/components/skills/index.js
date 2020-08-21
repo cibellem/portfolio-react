@@ -91,15 +91,13 @@ function Skills() {
   //diagonal-skills
   return (
     <>
-      <div className=" section section-all">
+      <div className="diagonal-skills section section-all">
         <Row id="skills" className="text-center pt-3 skill-header-row  ">
           <Col id="page-header-skills">Skills</Col>
         </Row>
         <Row className="text-center skill-header-row  ">
           <Col>
-            <h5>
-              Below are the tools I'm proficient with:
-            </h5>{" "}
+            <h5>Tools I'm proficient with:</h5>{" "}
           </Col>
         </Row>
 
@@ -110,37 +108,6 @@ function Skills() {
               <p> {item.name}</p>
             </Col>
           ))}
-          {/* <Col md={4} className="skill-col">
-              <h6 className="skill-paragraph">
-                {" "}
-                Back End <i class="fas fa-server  pl-2"></i>
-              </h6>
-
-              {backEnd.map((item) => (
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item skill-list">
-                    {" "}
-                    <i class="fas fa-circle pr-1"></i> {item.name}
-                  </li>
-                </ul>
-              ))}
-            </Col>
-            <Col md={4} className="skill-col">
-              {" "}
-              <h6 className="skill-paragraph">
-                {" "}
-                Other Techs <i class="fas fa-pencil-ruler pr-2"></i>
-              </h6>
-              {design.map((item) => (
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item skill-list">
-                    {" "}
-                    <i class="fas fa-circle pr-1"></i>
-                    {item.name}
-                  </li>
-                </ul>
-              ))}
-            </Col> */}
         </Row>
       </div>
     </>

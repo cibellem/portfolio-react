@@ -44,9 +44,10 @@ body {
 }
 .first,
 .second {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 900;
-  letter-spacing: 0.2px;
+  letter-spacing: -2px;
+  margin-left: 0;
 
   border-radius: 5px;
   // background-color: rgba(41, 180, 134, 0.233);
@@ -422,8 +423,6 @@ section.diagonal {
   width: 180%;
   height: 100%;
   // background-color: #f2f2f2;
-  border-top: 2px #bebaba02 solid;
-  border-bottom: 10px #a1a1a107 solid;
 }
 
 //============= Skills ==============
@@ -496,8 +495,6 @@ section.diagonal {
   height: 100%;
 
   background: #f2f2f2;
-  border-bottom: 10px #a1a1a107 solid;
-  border-bottom: 10px #a1a1a107 solid;
 }
 //Footer
 
@@ -657,7 +654,10 @@ section.diagonal {
   .row-to-shrink {
     padding: 0px 20px;
   }
-
+  .first,
+  .second {
+    font-size: 20px;
+  }
   .project-img {
     max-width: 90%;
   }
@@ -666,7 +666,7 @@ section.diagonal {
     height: 80vh;
   }
   .navbar {
-    padding: 40px;
+    padding: 26px;
   }
   .col-to-shrink {
     padding: 0px 20px;

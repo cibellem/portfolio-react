@@ -17,15 +17,16 @@ function App() {
     <>
       <Router>
         <NavBar />
+
+        {/* <button onClick={() => themeState.toggle()}>
+            {themeState.dark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          </button> */}
         <Container className="app-container">
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/contact" component={ContactPage} />
-          <Route exact path="/skills" component={Skills} />
-          <Route exact path="/projects" component={WorksPage} />
+          <HomePage />
         </Container>
+
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }

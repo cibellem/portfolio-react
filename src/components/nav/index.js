@@ -10,10 +10,10 @@ function NavBar() {
   };
   return (
     <Navbar expand="lg" className="container nav ">
-      <Navbar.Brand className="logo" href="#home">
+      {/* <Navbar.Brand className="logo" href="#home">
         <span className="first">Cibelle</span>
         <span className="second">Montor</span>
-      </Navbar.Brand>
+      </Navbar.Brand> */}
       <Navbar.Toggle
         className="border-1 ml-auto nav-bar-toggle"
         aria-controls="navbar-toggle"

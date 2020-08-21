@@ -29,7 +29,7 @@ function AboutPage() {
               place with endless oportunities to pursue that.
             </p>
           </Col>
-          <Col md={6} sm={12} className="pl-4">
+          <Col md={6} sm={12} className="">
             {" "}
             <p className="about-paragraph">
               I'm an effective learner who's continually looking for ways to
