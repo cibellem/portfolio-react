@@ -34,7 +34,7 @@ function AboutPage() {
             <p className="about-paragraph">
               I'm an effective learner who's continually looking for ways to
               grow both professionally and as a person. I put my heart into each
-              and every project on it and my top priority is delivering a final
+              and every project and my top priority is delivering a final
               product that goes above and beyond client expectations. I'm very
               much interested to add more skills to my list and I expect to
               learn and be challenged in my next roles.
