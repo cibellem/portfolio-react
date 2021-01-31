@@ -41,12 +41,7 @@ function AboutPage() {
               
             </p>
           </Col>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-            adipisci nostrum vitae id necessitatibus maiores, eos, dolorum
-            atque, officiis nobis unde sed provident doloribus natus modi
-            aliquam repellat sequi ipsa.
-          </p>
+          
         </Row>
         <Row className=" pb-3 row-to-shrink  ">
           <Col md={12} sm={12}>
