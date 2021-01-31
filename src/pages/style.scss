@@ -459,7 +459,7 @@ section.diagonal {
   padding: 40px 100px;
 
   @media (min-width: 800px) {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     padding: 40px 200px;
   }
 }
