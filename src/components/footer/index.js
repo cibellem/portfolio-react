@@ -7,8 +7,8 @@ function Footer() {
         <div class="footer-left col">
           <h6>Cibelle Montor</h6>
 
-          <p class="footer-company-name">© 2020 Copyright</p>
-          <span>Illustration by Stories by Freepik </span>
+          <p class="footer-company-name">© 2021 Copyright</p>
+          <span>Illustration by Freepik </span>
         </div>
       </div>
     </footer>
