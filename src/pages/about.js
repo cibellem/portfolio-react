@@ -38,8 +38,15 @@ function AboutPage() {
               product that goes above and beyond client expectations. I'm very
               much interested to add more skills to my list and I expect to
               learn and be challenged in my next roles.
+              
             </p>
           </Col>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+            adipisci nostrum vitae id necessitatibus maiores, eos, dolorum
+            atque, officiis nobis unde sed provident doloribus natus modi
+            aliquam repellat sequi ipsa.
+          </p>
         </Row>
         <Row className=" pb-3 row-to-shrink  ">
           <Col md={12} sm={12}>

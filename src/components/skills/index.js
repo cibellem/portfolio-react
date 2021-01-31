@@ -27,7 +27,7 @@ function Skills() {
       img: css,
     },
     {
-      name: "SASS",
+      name: "Sass",
       img: sass,
     },
     {
@@ -69,26 +69,7 @@ function Skills() {
     },
   ];
 
-  // let backEnd = [
-  //   {
-  //     name: "Mongo",
-  //   },
-  //   {
-  //     name: "MySQL",
-  //   },
-  //   {
-  //     name: "Firebase",
-  //   },
-  //   {
-  //     name: "Node",
-  //   },
-  //   {
-  //     name: "Express",
-  //   },
-  // ];
-
-  // let design = [{ name: "Figma" }, { name: "Git" }, { name: "Postman" }];
-  //diagonal-skills
+    //diagonal-skills
   return (
     <>
       <div className="diagonal-skills section section-all">
@@ -103,7 +84,7 @@ function Skills() {
 
         <Row className=" text-center  row-to-shrink skill-row ">
           {frontEnd.map((item) => (
-            <Col md={2} className="skill-col   ">
+            <Col  className="skill-col   ">
               <img src={item.img} alt="" className="img-responsive" />
               <p> {item.name}</p>
             </Col>

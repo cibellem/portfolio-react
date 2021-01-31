@@ -440,9 +440,9 @@ section.diagonal {
 }
 .skill-col {
   padding: 10px;
+
   img {
     height: auto;
-    max-width: 50%;
   }
   p {
     font-family: $body;
@@ -451,9 +451,19 @@ section.diagonal {
     font-weight: 500;
   }
 }
+
 .skill-row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
   padding: 40px 100px;
+
+  @media (min-width: 800px) {
+    grid-template-columns: auto auto auto auto;
+    padding: 40px 200px;
+  }
 }
+
 .skill-header-row {
   h5 {
     font-family: $body;
@@ -612,9 +622,7 @@ section.diagonal {
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
-  .skill-row {
-    padding: 30px 50px;
-  }
+
   .skill-col {
     padding-bottom: 40px;
     align-items: center;
@@ -629,10 +637,15 @@ section.diagonal {
     width: 183%;
     height: 100%;
   }
-  .skill .page-header,
+  .skill,
   .page-header-skills {
     font-size: 2.5em;
   }
+
+  .page-header {
+    font-size: 1.5em;
+  }
+
   .hero-header {
     font-size: 3em;
   }
@@ -684,7 +697,6 @@ section.diagonal {
   .skill-col {
     padding-left: 0;
     padding: 0;
-    width: 33%;
   }
   .skill-row {
     margin-left: 0;
