@@ -54,7 +54,7 @@ function WorksPage() {
 
   return (
     <>
-      <section class="diagonal" id="works">
+      <section class="diagonal" id="projects">
         <Row className="text-left pb-4 pt-4">
           <Col>
             <h2 className="page-header projects-header ">Projects</h2>

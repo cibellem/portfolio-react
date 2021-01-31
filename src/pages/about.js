@@ -6,8 +6,8 @@ import Row from "react-bootstrap/Row";
 function AboutPage() {
   return (
     <>
-      <section className="about-section section-all ">
-        <Row id="about" className="text-center pt-3 pb-3  ">
+      <section id="about"  className="about-section section-all ">
+        <Row className="text-center pt-3 pb-3  ">
           <Col className="">
             <h2 className="page-header ">About Me</h2>
             <h5 className="statement">

@@ -20,21 +20,25 @@ function NavBar() {
       />
       <Navbar.Collapse className="nav-bar-collapse" id="navbar-toggle">
         <Nav className="nav-bar ml-auto brackets ">
-          <Link to="/" className="px-4  nav-link">
+          <a href="/" className="px-4  nav-link">
             Home
-          </Link>
-          <Link to="/projects" className="px-4  nav-link">
+          </a>
+          <a href="#projects" className="px-4  nav-link">
+            {" "}
             Projects
-          </Link>
-          <Link to="/skills" className="px-4  nav-link">
+          </a>
+          <a href="#skills" className="px-4  nav-link">
+            {" "}
             Skills
-          </Link>
-          <Link to="/about" className="px-4  nav-link">
+          </a>
+          <a href="#about" className="px-4  nav-link">
+            {" "}
             About
-          </Link>
-          <Link to="/contact" className="px-4  nav-link">
+          </a>{" "}
+          <a href="#contact" className="px-4  nav-link">
+            {" "}
             Contact
-          </Link>
+          </a>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
