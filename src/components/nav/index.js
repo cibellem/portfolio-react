@@ -1,13 +1,8 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import ContactPage from "../../pages/contact";
 
 function NavBar() {
-  const handleThemChange = () => {
-    console.log("hi");
-  };
   return (
     <Navbar expand="lg" className="container nav ">
       {/* <Navbar.Brand className="logo" href="#home">

@@ -1,10 +1,8 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import shelfie from "../pages/assets/book.png";
 import wx from "../pages/assets/wx.png";
-import pleasantly from "../pages/assets/pleasantly.svg";
 import ck from "../pages/assets/ck.png";
 import plantare from "../pages/assets/plantare.png";
 
