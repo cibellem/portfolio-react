@@ -340,19 +340,6 @@ form {
   position: relative;
 }
 
-.projects-header:after {
-  content: "";
-
-  width: 2%;
-  position: absolute;
-  left: 0px;
-  bottom: -3px;
-  border-width: 0 0 4px;
-  border-style: solid;
-  color: $green;
-  opacity: 0.8;
-}
-
 #app-link,
 #gihub-link {
   margin: 5px;
@@ -670,16 +657,15 @@ section.diagonal {
     height: 100%;
   }
   .skill,
-  .page-header-skills {
-    font-size: 2.5em;
-  }
-
+  #page-header-skills,
+  .about-section h2,
   .page-header {
-    font-size: 1.5em;
+    font-size: 2em;
+    text-align: center;
   }
 
   .hero-header {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .hero-text {
     font-size: 1em;

@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
@@ -8,12 +7,13 @@ function Hero() {
     <Row id="home" className="row-shared row-to-shrink fade-in-image ">
       <Col className="col-to-shrink" lg={6} md={6} xs={12}>
         {" "}
-        <h1 className="hero-header">Hello!</h1>
+        <h1 className="hero-header">Hi! I'm Cibelle :)</h1>
         <p className="hero-text">
           {" "}
-          I'm a Full Stack Developer who is driven by building scalable, out of
-          the box and accessible solutions. Experienced with a wide range of
-          Front and Back End technologies and constantly learning new ones.
+          I'm a Software Engineer naturally driven by challenges. I love
+          building scalable, out of the box and accessible solutions.
+          Experienced with both Front and Back End technologies and constantly
+          seeking out new ways to grow as an Engineer.
         </p>
         <p className="hero-text"> </p>
         {/* <button className="button hero-button">Projects</button> */}
