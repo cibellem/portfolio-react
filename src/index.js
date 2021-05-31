@@ -13,9 +13,9 @@ function App() {
     <>
       <Router>
         <NavBar />
-        <Container className="app-container">
+        <article className="app-container">
           <HomePage />
-        </Container>
+        </article>
         <Footer />
       </Router>
     </>

@@ -19,6 +19,37 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   padding: 0;
+  background: hsla(55, 82%, 63%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(55, 82%, 63%, 1) 0%,
+    hsla(0, 0%, 85%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(55, 82%, 63%, 1) 0%,
+    hsla(0, 0%, 85%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(55, 82%, 63%, 1) 0%,
+    hsla(0, 0%, 85%, 1) 100%
+  );
+}
+
+.app-container {
+  background-color: #fafafa30;
+  border-radius: 10px;
+  padding: 0 120px;
+  width: 80%;
+  margin: auto;
+
+  @media (max-width: 780px) {
+    padding: 0;
+  }
 }
 
 //Nav
@@ -87,8 +118,8 @@ div.brackets a:active {
   font-family: $header;
   font-weight: bold;
   font-size: 4em;
-  color: #58772e;
-  padding-bottom: 5%;
+  color: #2f2f2f;
+  padding-bottom: 2%;
 }
 
 .hero-button {
@@ -152,6 +183,7 @@ div.brackets a:active {
   font-size: 2.5em;
   font-weight: bold;
   font-style: normal;
+  color: #2f2f2f;
 }
 // Contact Page
 
@@ -179,13 +211,12 @@ form {
 
 .form {
   .submit-button {
-    font-family: $header;
+    font-family: $body;
     font-size: 16px;
-    background-color: #58772e;
+    background-color: #8b9b33;
     color: #f2f2f2;
     padding: 15px;
     border-radius: 10px;
-
     border-top: none;
     border-right: none;
     border-left: none;
@@ -195,9 +226,9 @@ form {
   }
 }
 .submit-button:hover {
-  border-bottom: 4px solid #3a393870;
+  border-bottom: 4px solid #36363670;
   color: whiteSmoke;
-  transition: 1s;
+  transition: 0.5s ease-in-out;
 }
 .contact-form-header {
   font-family: $body;
@@ -209,6 +240,10 @@ form {
   color: $second-black;
 }
 // Contact List
+
+.list-group-flush > .list-group-item {
+  background-color: inherit;
+}
 .contact-list {
   font-family: $body;
   color: $second-black;
@@ -216,7 +251,7 @@ form {
   font-weight: 300;
 
   i {
-    color: #58772e;
+    color: #8b9b33;
     font-weight: bold;
     padding-right: 10px;
     padding-left: 0;
@@ -250,10 +285,10 @@ form {
   }
   h5 {
     font-family: $body;
-    color: silver;
+    color: #797979;
     font-weight: 400;
     font-style: italic;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 .about-paragraph {
@@ -266,7 +301,7 @@ form {
 }
 
 .section-all {
-  padding: 50px 0px;
+  padding: 80px 0px;
 }
 // ============ Works Page ============
 
@@ -282,9 +317,9 @@ form {
     font-weight: 600;
   }
   h6 {
-    color: #ffffffb5;
     font-size: 14px;
     font-weight: 400;
+    color: #6c6c6ce8;
   }
   i {
     display: inline-flex;
@@ -321,18 +356,20 @@ form {
 #app-link,
 #gihub-link {
   margin: 5px;
-  background-color: #58772e;
-
-  padding: 6px 10px;
+  background-color: #afb0aa;
+  padding: 4px 10px;
   font-size: 12px;
-  color: #f2f2f2;
-  border-radius: 9px;
-  border-bottom: 3px solid #32421cfa;
+  color: #faf0dd;
+  border-radius: 20px;
+  font-weight: 300;
+  font-family: "Inter";
+  border-bottom: 2px solid #32421c82;
 }
+
 #app-link:hover,
 #gihub-link:hover {
   text-decoration: none;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.96);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.36);
 }
 
 .project-img {
@@ -368,17 +405,22 @@ section.diagonal {
 }
 
 .card {
+  box-shadow: 0px 4px 4px rgba(148, 148, 148, 0.122);
   border-radius: 20px;
   border: none;
-  // box-shadow: 0px 4px 6px rgba(148, 148, 148, 0.39);
   background-color: #f2f2f2a9;
-  background-color: #ffffff0f;
+  background-color: #ffffff2f;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
 
   h5 {
     font-family: $header;
-    color: #ffffffb5;
+    color: #6c6c6ce8;
     padding-bottom: 10px;
-    font-weight: 200;
+    font-weight: 300;
+    letter-spacing: -1px;
   }
 }
 
@@ -435,6 +477,7 @@ section.diagonal {
 
   img {
     height: auto;
+    width: 80%;
   }
   p {
     font-family: $body;
@@ -448,21 +491,22 @@ section.diagonal {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
-  padding: 40px 100px;
+  max-width: 800px;
+  margin: auto;
 
   @media (min-width: 800px) {
     grid-template-columns: auto auto auto auto auto auto;
-    padding: 40px 200px;
+    justify-content: initial;
   }
 }
 
 .skill-header-row {
   h5 {
     font-family: $body;
-    color: silver;
+    color: #797979;
     font-weight: 400;
     font-style: italic;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 #page-header-skills {
@@ -504,13 +548,6 @@ section.diagonal {
   padding: 10px;
 }
 
-//Footer copied and pasted
-
-// footer {
-//   bottom: 0;
-//   font-family: $header;
-// }
-
 @media (max-height: 800px) {
   footer {
     position: static;
@@ -521,11 +558,10 @@ section.diagonal {
 }
 
 .footer-distributed {
-  background-color: #2a2a2a;
+  background-color: inherit;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font-family: $body;
   letter-spacing: -0.6px;
   padding: 20px 20px 30px 10px;
   color: $black-mute;
@@ -549,23 +585,30 @@ section.diagonal {
   padding-right: 20px;
 }
 .footer-distributed span {
-  font-size: 12px;
-  color: rgba(192, 192, 192, 0.787);
+  font-size: 10px;
+  color: #696464f5;
+  font-family: $body;
+  font-weight: 400;
 }
 
 .footer-distributed h6 {
-  color: #f2f2f2d5;
-  // font-family: $header;
+  color: #4c4c4ca1;
   margin: 0;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: $header;
 }
 
 /* The company logo */
 
 .footer-distributed .footer-company-name {
-  color: rgba(192, 192, 192, 0.787);
-  font-size: 14px;
-  font-weight: normal;
+  color: #696464f5;
+  font-size: 12px;
+  font-family: $body;
+  font-weight: 400;
   margin: 0;
+  line-height: 0;
 }
 
 /* Footer Center */
