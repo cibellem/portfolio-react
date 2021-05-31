@@ -79,22 +79,16 @@ function WorksPage() {
                   <Col>
                     <p className="hashtags">
                       <h6> {item.description}</h6>
-
-                      <div className="container">
-                        <p>{item.about}</p>
-                        <div className="row pt-2">
-                          <div className="col">
-                            <a id="gihub-link" href={item.github}>
-                              {" "}
-                              Github
-                              <i class="pl-2  fal fa-angle-right"></i>
-                            </a>
-                            <a id="app-link" href={item.liveApp}>
-                              Live App
-                              <i class="pl-2   fal fa-angle-right"></i>
-                            </a>
-                          </div>
-                        </div>
+                      <div className="flex">
+                        <a id="gihub-link" href={item.github}>
+                          {" "}
+                          Source Code
+                          {/* <i className="pl-2  fal fa-angle-right"></i> */}
+                        </a>
+                        <a id="app-link" href={item.liveApp}>
+                          Live App
+                          {/* <i className="pl-2   fal fa-angle-right"></i> */}
+                        </a>
                       </div>
                     </p>
                   </Col>

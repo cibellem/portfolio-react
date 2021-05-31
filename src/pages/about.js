@@ -1,12 +1,11 @@
 import React from "react";
-
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
 function AboutPage() {
   return (
     <>
-      <section id="about"  className="about-section section-all ">
+      <section id="about" className="about-section section-all ">
         <Row className="text-center pt-3 pb-3  ">
           <Col className="">
             <h2 className="page-header ">About Me</h2>
@@ -38,10 +37,8 @@ function AboutPage() {
               product that goes above and beyond client expectations. I'm very
               much interested to add more skills to my list and I expect to
               learn and be challenged in my next roles.
-              
             </p>
           </Col>
-          
         </Row>
         <Row className=" pb-3 row-to-shrink  ">
           <Col md={12} sm={12}>

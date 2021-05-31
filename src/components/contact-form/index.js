@@ -1,19 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
-
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import * as firebase from "firebase";
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyC52PAOtRTH6rW1ENR51KdSsSnKZTGqFGE",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "contact-form-portfolio-61dfa.firebaseapp.com",
-  databaseURL: "https://contact-form-portfolio-61dfa.firebaseio.com",
+  databaseURL: process.env.REACT_APP_DB_URL,
   projectId: "contact-form-portfolio-61dfa",
   storageBucket: "contact-form-portfolio-61dfa.appspot.com",
-  messagingSenderId: "808342677893",
-  appId: "1:808342677893:web:8047798b7e9e93fb2e3cec",
-  measurementId: "G-975E7P66D1",
+  messagingSenderId: process.env.REACT_APP_MSG_SENDER_ID,
+  appId: process.env.REACT_APP_API_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -29,7 +28,7 @@ function ContactForm() {
 
   function handleForm(e) {
     e.preventDefault();
-    console.log(name, email, message);
+
     if (!name || !email || !message) {
       setError("I need a little bit more of info");
     } else {
@@ -38,6 +37,7 @@ function ContactForm() {
           name,
           email,
           message,
+          created: new Date(),
         })
         .then(function () {
           setError("Msg sent!I will get back to you soon");

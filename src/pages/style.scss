@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Quattrocento:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Scope+One&display=swap");
 
 // ##### Fonts #####
-$header: "Domine", serif;
-$body: "Lora", serif;
+$header: "Inter", sans-serif;
+$body: "Scope One", serif;
 // ##### Colors #####
 $tomato: #054986;
 $green: rgb(41, 180, 134);
@@ -15,25 +14,16 @@ $black-mute: #615c59;
 html,
 body {
   height: 100%;
-
   overflow-x: hidden;
   box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
   padding: 0;
-
-  // background: rgb(251, 98, 107);
-  // background: linear-gradient(
-  //   270deg,
-  //   rgba(251, 98, 107, 1) 0%,
-  //   rgba(246, 45, 94, 0.6337885495995272) 100%
-  // );
 }
 
 //Nav
 .navbar {
-  // box-shadow: 0px 3px 6px rgba(136, 134, 134, 0.383);
-  padding: 40px 0px;
+  padding: 20px 0px;
 }
 
 .logo {
@@ -48,19 +38,15 @@ body {
   font-weight: 900;
   letter-spacing: -2px;
   margin-left: 0;
-
   border-radius: 5px;
-  // background-color: rgba(41, 180, 134, 0.233);
 }
 
 .nav-link {
   font-family: $header;
-  color: $black-mute !important;
+  color: #58772e;
   font-size: 18px;
   position: relative;
-  // margin-top: 10px;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .nav-bar-collapse {
@@ -70,8 +56,9 @@ body {
 div.brackets a:before,
 div.brackets a:after {
   position: absolute;
-  color: rgb(41, 180, 134);
+  color: #58772e;
   opacity: 0;
+  font-weight: 500;
   font-size: 30px;
   top: 0px;
   transition: all 0.3s;
@@ -100,8 +87,7 @@ div.brackets a:active {
   font-family: $header;
   font-weight: bold;
   font-size: 4em;
-
-  color: rgb(41, 180, 134);
+  color: #58772e;
   padding-bottom: 5%;
 }
 
@@ -120,8 +106,8 @@ div.brackets a:active {
   transition: 0.5s;
 }
 #home {
-  padding: 50px 30px;
-  height: 70vh;
+  // padding: 50px 30px;
+  height: 100vh;
   justify-content: flex-start;
   display: flex;
   align-items: center;
@@ -131,9 +117,26 @@ div.brackets a:active {
   font-size: 20px;
   color: $second-black;
   font-weight: 400;
-  line-height: 1.8em;
+  line-height: 1.5em;
   span {
     font-size: 20px;
+  }
+}
+
+.fade-in-image {
+  animation: fadeIn 4s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
@@ -178,12 +181,11 @@ form {
   .submit-button {
     font-family: $header;
     font-size: 16px;
-    background-color: #ff8f76;
-    background-color: rgb(41, 180, 134);
+    background-color: #58772e;
     color: #f2f2f2;
     padding: 15px;
     border-radius: 10px;
-    font-weight: bold;
+
     border-top: none;
     border-right: none;
     border-left: none;
@@ -210,16 +212,17 @@ form {
 .contact-list {
   font-family: $body;
   color: $second-black;
-
   font-size: 16px;
   font-weight: 300;
+
   i {
-    color: rgb(41, 180, 134);
+    color: #58772e;
     font-weight: bold;
     padding-right: 10px;
     padding-left: 0;
     font-size: 1.3em;
   }
+
   ul,
   li {
     background-color: whitesmoke;
@@ -269,17 +272,17 @@ form {
 
 .hashtags {
   color: $second-black;
-  font-family: $header;
+  font-family: $body;
   font-size: 12px;
   font-weight: 500;
   margin-top: 10px;
   h5 {
-    color: $second-black;
+    color: #ffffffb5;
     font-size: 18px;
     font-weight: 600;
   }
   h6 {
-    color: $black-mute;
+    color: #ffffffb5;
     font-size: 14px;
     font-weight: 400;
   }
@@ -315,39 +318,27 @@ form {
   opacity: 0.8;
 }
 
+#app-link,
 #gihub-link {
-  font-weight: lighter;
-  background-color: #ff8f76;
-  background-color: #a791f1;
-  padding: 6px 10px;
-  font-size: 12px;
-  color: #f2f2f2;
-  border-radius: 9px;
-  border-bottom: 3px solid #8161ed;
-}
+  margin: 5px;
+  background-color: #58772e;
 
-#app-link {
-  font-weight: lighter;
-  background-color: #a791f1;
   padding: 6px 10px;
-  margin-left: 2px;
   font-size: 12px;
   color: #f2f2f2;
   border-radius: 9px;
-  border-bottom: 3px solid #8161ed;
+  border-bottom: 3px solid #32421cfa;
 }
 #app-link:hover,
 #gihub-link:hover {
   text-decoration: none;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.479);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.96);
 }
 
 .project-img {
   height: auto;
-  box-shadow: 0px 3px 6px rgba(8, 8, 8, 0.459);
-  max-width: 80%;
-  border-radius: 0px;
-  // border: 2px rgba(27, 26, 26, 0.096) solid;
+  box-shadow: 0px 3px 6px black;
+  max-width: 70%;
 }
 
 section,
@@ -372,22 +363,22 @@ section.diagonal {
   padding: 40px 0px;
   // padding: 3em;
   h2 {
-    color: $second-black;
+    color: #f6f6f6;
   }
 }
 
 .card {
   border-radius: 20px;
   border: none;
-  box-shadow: 0px 4px 6px rgba(148, 148, 148, 0.39);
+  // box-shadow: 0px 4px 6px rgba(148, 148, 148, 0.39);
   background-color: #f2f2f2a9;
-  background-color: #b5a7e446;
+  background-color: #ffffff0f;
 
   h5 {
     font-family: $header;
-    color: $black-mute;
+    color: #ffffffb5;
     padding-bottom: 10px;
-    font-weight: bolder;
+    font-weight: 200;
   }
 }
 
@@ -422,7 +413,8 @@ section.diagonal {
   z-index: -1;
   width: 180%;
   height: 100%;
-  // background-color: #f2f2f2;
+  background-color: #f2f2f2;
+  background-color: #261423;
 }
 
 //============= Skills ==============
@@ -606,9 +598,6 @@ section.diagonal {
   color: black;
 }
 
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
-
 @media (max-width: 880px) {
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
@@ -722,4 +711,4 @@ section.diagonal {
   #home {
     height: 70vh;
   }
-}
+} ;

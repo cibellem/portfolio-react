@@ -5,14 +5,15 @@ import Row from "react-bootstrap/Row";
 
 function Hero() {
   return (
-    <Row id="home" className="row-shared row-to-shrink  ">
+    <Row id="home" className="row-shared row-to-shrink fade-in-image ">
       <Col className="col-to-shrink" lg={6} md={6} xs={12}>
         {" "}
         <h1 className="hero-header">Hello!</h1>
         <p className="hero-text">
           {" "}
-          I'm Cibelle, Full Stack Web Developer based in Phoenix, Arizona. I'm
-          building data-driven, creative, and user-friendly solutions.
+          I'm a Full Stack Developer who is driven by building scalable, out of
+          the box and accessible solutions. Experienced with a wide range of
+          Front and Back End technologies and constantly learning new ones.
         </p>
         <p className="hero-text"> </p>
         {/* <button className="button hero-button">Projects</button> */}
