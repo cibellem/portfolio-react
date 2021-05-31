@@ -6,7 +6,7 @@ import ContactForm from "../components/contact-form";
 
 function ContactPage() {
   return (
-    <section className="contact-section  section-all">
+    <section className="  section-all">
       <Row id="contact" className="text-left  row-to-shrink  pb-4 ">
         <Col className="d-flex-row justify-around" md={6} xs={12}>
           <h2 className=" page-header pb-2">Reach out!</h2>{" "}
