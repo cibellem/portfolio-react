@@ -1,31 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.59d48a0a.chunk.css",
-    "main.js": "/static/js/main.db5b4417.chunk.js",
-    "main.js.map": "/static/js/main.db5b4417.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d7d8550f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d7d8550f.js.map",
+    "main.css": "/static/css/main.79737935.chunk.css",
+    "main.js": "/static/js/main.07d7d413.chunk.js",
+    "main.js.map": "/static/js/main.07d7d413.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e5fc83a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e5fc83a6.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.c2d02463.chunk.js": "/static/js/2.c2d02463.chunk.js",
-    "static/js/2.c2d02463.chunk.js.map": "/static/js/2.c2d02463.chunk.js.map",
+    "static/js/2.78105cd1.chunk.js": "/static/js/2.78105cd1.chunk.js",
+    "static/js/2.78105cd1.chunk.js.map": "/static/js/2.78105cd1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9df6ac3ca4d81e23770dcb27766392a7.js": "/precache-manifest.9df6ac3ca4d81e23770dcb27766392a7.js",
+    "precache-manifest.63acded9a821423746dba958f2604070.js": "/precache-manifest.63acded9a821423746dba958f2604070.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.59d48a0a.chunk.css.map": "/static/css/main.59d48a0a.chunk.css.map",
-    "static/js/2.c2d02463.chunk.js.LICENSE.txt": "/static/js/2.c2d02463.chunk.js.LICENSE.txt",
+    "static/css/main.79737935.chunk.css.map": "/static/css/main.79737935.chunk.css.map",
+    "static/js/2.78105cd1.chunk.js.LICENSE.txt": "/static/js/2.78105cd1.chunk.js.LICENSE.txt",
+    "static/media/amplify.svg": "/static/media/amplify.a914431d.svg",
     "static/media/book.png": "/static/media/book.0e412006.png",
     "static/media/ck.png": "/static/media/ck.789d122e.png",
+    "static/media/graphql.svg": "/static/media/graphql.0d7328bc.svg",
     "static/media/me.svg": "/static/media/me.c5ef0752.svg",
     "static/media/plantare.png": "/static/media/plantare.7cc359fc.png",
-    "static/media/pleasantly.svg": "/static/media/pleasantly.be1e3fc3.svg",
+    "static/media/redux.svg": "/static/media/redux.28f6c14b.svg",
     "static/media/wx.png": "/static/media/wx.146f4c7a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d7d8550f.js",
+    "static/js/runtime-main.e5fc83a6.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.c2d02463.chunk.js",
-    "static/css/main.59d48a0a.chunk.css",
-    "static/js/main.db5b4417.chunk.js"
+    "static/js/2.78105cd1.chunk.js",
+    "static/css/main.79737935.chunk.css",
+    "static/js/main.07d7d413.chunk.js"
   ]
 }
