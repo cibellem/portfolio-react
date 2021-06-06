@@ -19,32 +19,14 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   padding: 0;
-  background: hsla(55, 82%, 63%, 1);
-
-  background: linear-gradient(
-    90deg,
-    hsla(55, 82%, 63%, 1) 0%,
-    hsla(0, 0%, 85%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(55, 82%, 63%, 1) 0%,
-    hsla(0, 0%, 85%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(55, 82%, 63%, 1) 0%,
-    hsla(0, 0%, 85%, 1) 100%
-  );
+  background: rgb(255, 255, 255);
 }
 
 .app-container {
   background-color: #fafafa30;
   border-radius: 10px;
   padding: 0 120px;
-  width: 80%;
+  width: 90%;
   margin: auto;
 
   @media (max-width: 780px) {
@@ -118,7 +100,7 @@ div.brackets a:active {
 .hero-header {
   font-family: $header;
   font-weight: bold;
-  font-size: 4em;
+  font-size: 2.5em;
   color: #2f2f2f;
   padding-bottom: 2%;
 }
@@ -139,7 +121,8 @@ div.brackets a:active {
 }
 
 #home {
-  // padding: 50px 30px;
+  max-width: 1200px;
+  margin: auto;
   height: 100vh;
   justify-content: flex-start;
   display: flex;
@@ -148,7 +131,7 @@ div.brackets a:active {
 
 .hero-text {
   font-family: $body;
-  font-size: 20px;
+  font-size: 16px;
   color: $second-black;
   font-weight: 400;
   line-height: 1.5em;
@@ -216,7 +199,7 @@ form {
   .submit-button {
     font-family: $body;
     font-size: 16px;
-    background-color: #8b9b33;
+    background-color: #49c982d6;
     color: #f2f2f2;
     padding: 15px;
     border-radius: 10px;
@@ -254,7 +237,7 @@ form {
   font-weight: 300;
 
   i {
-    color: #8b9b33;
+    color: #49c982d6;
     font-weight: bold;
     padding-right: 10px;
     padding-left: 0;
@@ -277,9 +260,11 @@ form {
 
 // About Page
 .about-section {
+  max-width: 1000px;
+  margin: auto;
+
   h2 {
     color: $second-black;
-
     padding-bottom: 20px;
     font-family: $header;
     font-size: 2.5em;
@@ -288,7 +273,7 @@ form {
   }
   h5 {
     font-family: $body;
-    color: #797979;
+    color: #a8ade98c;
     font-weight: 400;
     font-style: italic;
     padding-bottom: 10px;
@@ -350,20 +335,21 @@ form {
 #app-link,
 #gihub-link {
   margin: 5px;
-  background-color: #afb0aa;
-  padding: 4px 10px;
+  background-color: #809def;
+  padding: 6px 12px;
   font-size: 12px;
-  color: #faf0dd;
+  color: #ffffff;
   border-radius: 20px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Inter";
-  border-bottom: 2px solid #32421c82;
+  border-bottom: 4px solid #394a7bba;
 }
 
 #app-link:hover,
 #gihub-link:hover {
   text-decoration: none;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.36);
+  transition: 0.5s ease-in-out;
+  border-bottom: 4px solid #101522ba;
 }
 
 .project-img {
@@ -402,8 +388,7 @@ section.diagonal {
   box-shadow: 0px 4px 4px rgba(148, 148, 148, 0.122);
   border-radius: 20px;
   border: none;
-  background-color: #f2f2f2a9;
-  background-color: #ffffff2f;
+  background-color: #c3d5fcd4;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -471,7 +456,7 @@ section.diagonal {
 
   img {
     height: auto;
-    width: 80%;
+    width: 50%;
   }
   p {
     font-family: $body;
